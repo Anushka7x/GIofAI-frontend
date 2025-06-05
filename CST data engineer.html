@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Data Engineering CST</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Your Main Style -->
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+      <header class="navbar-custom fixed-top bg-white shadow-sm">
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+     <!-- Logo Left -->
+     <a class="navbar-brand" href="#">
+      <img alt="GIofAI Logo" src="giofaiIcon.webp"/>
+     </a>
+     <!-- Mobile Toggler -->
+     <button class="navbar-toggler btn-primary" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!-- Centered Menu -->
+     <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav mx-auto gap-lg-4 gap-3 text-center">
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+         About
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="programsDropdown" role="button">
+         Programs &amp; Events
+        </a>
+        <ul aria-labelledby="programsDropdown" class="dropdown-menu bg-dark-blue text-pastel-yellow">
+         <!-- Programs -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Programs
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Career Starter Training
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data Engineering CST
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Engineering CST
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Career Transition Mentorship
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data Engineering CMT
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Engineering CMT
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <!-- Leadership Development -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Leadership Development
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li>
+            <a class="dropdown-item" href="#">
+             AI Leadership and Strategy Program
+            </a>
+           </li>
+          </ul>
+         </li>
+         <!-- Workshop & Masterclass -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Workshop &amp; Masterclass
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Agentic AI Masterclass
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data and AI Hackathon
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Strategy &amp; Readiness
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <!-- Corporate -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Corporate
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li>
+            <a class="dropdown-item" href="#">
+             Corporate Training Services
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+         Team
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">
+         Community
+        </a>
+        <ul class="dropdown-menu bg-dark-blue text-pastel-yellow">
+         <li>
+          <a class="dropdown-item" href="#">
+           News
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" href="#">
+           Group
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+         Contact
+        </a>
+       </li>
+      </ul>
+      <!-- Mobile Only Auth Buttons (no bullet, centered, styled as buttons) -->
+      <ul class="navbar-nav list-unstyled d-lg-none w-100 text-center my-2">
+       <li class="nav-item mb-2">
+        <a class="btn btn-primary btn-sm w-75" href="#">
+         Sign In
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="btn btn-primary btn-sm w-75" href="#">
+         Sign Up
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Right Side Buttons on Desktop -->
+     <div class="d-none d-lg-flex ms-auto gap-2">
+      <a class="btn btn-primary btn-sm px-3" href="#">
+       Sign In
+      </a>
+      <a class="btn btn-primary btn-sm px-3" href="#">
+       Sign Up
+      </a>
+      <!-- User Icon dropdown (only shown after login) -->
+      <ul class="navbar-nav d-none" id="userMenu">
+       <li class="nav-item dropdown">
+        <a class="nav-link text-warning" data-bs-toggle="dropdown" href="#">
+         <i class="fa-solid fa-user fs-5">
+         </i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark-blue border-0">
+         <li>
+          <a class="dropdown-item text-warning" href="#">
+           Dashboard
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item text-warning" href="#">
+           Logout
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <!-- Header End -->
+ <!-- Hero / Intro Section -->
+  <section class="py-5 bg-dark-blue">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="section-title text-white mb-4">
+            Data Engineering : Career Starter Training
+          </div>
+          <p class="text-white" style="line-height:2;">
+            Data Engineering is a crucial field in the world of technology, focusing on the collection, storage, and processing of data. Data Engineers play a vital role in making data accessible and useful for organizations, driving decision-making and innovation. Through this premium, hands-on program, you'll gain the proficiency required to architect robust data infrastructure and drive impactful insights for organizations across various sectors.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden shadow">
+            <iframe
+              style="min-height: 550px; width: 100%; border: none;"
+              src="https://forms.zohopublic.com.au/giofai/form/DataEngineeringCSTBrochure/formperma/8xXwI1i3JdVIWZKquL2nyc2JHhwOmKPMSih9zD0F1-w"
+              frameborder="0"
+              aria-label="Data Engineering CST Brochure"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+<section class="py-5" id="Overview">
+  <div class="container">
+    <div class="row">
+      <!-- Left: Overview Text -->
+      <div class="col-lg-6 col-sm-12">
+        <div class="mb-4">
+          <h2 class="section-title mb20">OVERVIEW</h2>
+          <p>
+      The Data Engineering Career Starter Training (CST) Program is a comprehensive and intensive 12-week program designed to equip learners with the critical skills and knowledge needed to succeed in the field of data engineering. This program offers a balanced mix of weekend training, self-study, and hands-on capstone projects to ensure you gain both theoretical understanding and practical experience.
+This blend of structured guidance and independent study provides a flexible yet rigorous learning experience, allowing you to learn at your own pace while ensuring you stay on track to meet your goals.<br><br>
+Engage in hands-on projects that mirror real-world scenarios, allowing you to apply what you’ve learned in practical, meaningful ways. By the end of the program, you’ll have the technical expertise to design, build, and manage complex data infrastructures, empowering you to tackle real-world data challenges with confidence.
+        </div>
+      </div>
+      <!-- Right: Video Poster with Play Button -->
+      <div class="col-lg-6">
+        <div class="institute-video-container mb20">
+          <style>
+            .video-container {
+              position: relative;
+              width: 100%;
+              max-width: 800px;
+              margin: auto;
+              text-align: center;
+            }
+            .video-container img {
+              width: 100%;
+              cursor: pointer;
+              border-radius: 5px;
+            }
+            .video-container video {
+              width: 100%;
+              height: auto;
+              display: none;
+            }
+            .loading-overlay {
+              display: none;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background: rgba(0, 0, 0, 0.8);
+              color: white;
+              padding: 15px;
+              border-radius: 5px;
+              font-size: 16px;
+              text-align: center;
+            }
+          </style>
+          <div class="video-container">
+            <!-- Poster Image -->
+            <img id="videoPoster" src="/resource/uploads/2025/02/Screenshot%202025-02-01%20at%207.25.26%E2%80%AFAM.png" alt="Video Poster">
+            <!-- Video Element -->
+            <video id="videoPlayer" controls>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <!-- Loading Overlay -->
+            <div id="loadingOverlay" class="loading-overlay">Loading video...</div>
+          </div>
+          <script>
+            const poster = document.getElementById('videoPoster');
+            const video = document.getElementById('videoPlayer');
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            poster.addEventListener('click', function () {
+              loadingOverlay.style.display = 'block';
+              setTimeout(() => {
+                video.querySelector('source').src = "/resource/uploads/2025/01/AI-Engineering-Your-Future-Career-Await.mp4";
+                video.load();
+                video.style.display = "block";
+                poster.style.display = "none";
+                loadingOverlay.style.display = 'none';
+                video.play();
+              }, 1500);
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Highlights Section -->
+<section class="py-5 bg-pastel-blue">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <!-- LUCRATIVE CAREERS -->
+      <div class="col-md-4 d-flex">
+        <div class="card-style flex-fill p-4 h-100">
+          <div class="mb-3">
+            <span class="icon-circle fs-2">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </span>
+          </div>
+          <h5 class="fw-bold text-dark-blue mb-2">LUCRATIVE CAREERS</h5>
+          <p class="text-muted mb-0" style="min-height:80px;">
+            Average Salary for AI Engineers in Australia is AUD $162,084 per annum.
+          </p>
+        </div>
+      </div>
+
+  
+
+      <!-- CAREER STABILITY AND ADVANCEMENT -->
+      <div class="col-md-4 d-flex">
+        <div class="card-style flex-fill p-4 h-100">
+          <div class="mb-3">
+            <span class="icon-circle fs-2">
+              <i class="fa-regular fa-file-lines"></i>
+            </span>
+          </div>
+          <h5 class="fw-bold text-dark-blue mb-2">CAREER STABILITY<br>AND ADVANCEMENT</h5>
+          <p class="text-muted mb-0" style="min-height:80px;">
+            Transition into high-paying roles in tech giants and cutting-edge startups.
+          </p></div></div>
+                <div class="col-md-4 d-flex">
+
+                  <div class="card-style flex-fill p-4 h-100">
+
+          <div class="mb-3">
+            <span class="icon-circle fs-2">
+              <i class="fa-regular fa-file-lines"></i>
+            </span>
+          </div>
+          <h5 class="fw-bold text-dark-blue mb-2">HIGH DEMAND</h5>
+          <p class="text-muted mb-0">
+            AI Engineers are in high demand due to rapid AI adoption across industries and a shortage of skilled professionals.
+          </p>
+        </div>
+      </div>
+    <!-- TOP COMPANIES (CENTER, 2x width) -->
+      <div class="col-md-8 d-flex">
+        <div class="card-style flex-fill p-4 h-100 d-flex flex-column align-items-center justify-content-center">
+          <h5 class="fw-bold text-dark-blue text-center mb-3">Top companies hiring in this industry</h5>
+          <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+            <img src="company1.png" alt="more than money" style="height:36px;">
+            <img src="wesfarmers.png" alt="Wesfarmers" style="height:36px;">
+            <img src="anz.png" alt="ANZ" style="height:36px;">
+            <img src="macquarie.png" alt="Macquarie" style="height:36px;">
+            <img src="fortescue.png" alt="Fortescue" style="height:36px;">
+            <img src="coles.png" alt="Coles" style="height:36px;">
+            <img src="verint.png" alt="Verint" style="height:36px;">
+            <!-- Add actual image paths or use text if images not available -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Second row for INDUSTRY GROWTH & SALARY EXPERT -->
+    <div class="row g-4 justify-content-center mt-2">
+      <!-- INDUSTRY GROWTH -->
+      <div class="col-md-4 d-flex">
+        <div class="card-style flex-fill p-4 h-100">
+          <div class="mb-3">
+            <span class="icon-circle fs-2">
+              <i class="fa-regular fa-file-lines"></i>
+            </span>
+          </div>
+          <h5 class="fw-bold text-dark-blue mb-2">INDUSTRY GROWTH</h5>
+          <p class="text-muted mb-0">
+            Global AI market is projected to reach $407 billion by 2027.
+          </p>
+        </div>
+      </div>
+      <!-- SALARY EXPERT (HANDSHAKE) -->
+      <div class="col-md-6 d-flex">
+        <div class="card-style flex-fill p-4 h-100 d-flex align-items-center">
+                    <div class="mb-3">
+
+          <span class="icon-circle fs-2">
+            <i class="fa-solid fa-handshake"></i>
+          </span>
+          <div>          </div>
+
+            <p class="mb-0 text-muted">
+              As per <a href="https://www.salaryexpert.com/" target="_blank" class="text-dark-blue">Salaryexpert.com</a>,
+              average salary for AI Engineers will be 186,646 by 2029
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- End Highlights -->
+
+
+<!-- Program Dates & Cohorts Section -->
+<section class="py-5 bg-white" id="Dates">
+  <div class="container">
+    <div class="section-title text-dark-blue mb-4 text-center">
+      Program Dates & Cohorts
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Cohort 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style p-4 h-100">
+          <h6 class="fw-bold text-dark-blue mb-2">March Cohort</h6>
+          <div class="text-muted small mb-2">
+            5 March 2025 – 5 June 2025 <br>
+            Melbourne, Australia &amp; Remote
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <a href="#" class="btn btn-primary px-4 py-2">
+              Apply Now &rarr;
+            </a>
+            <div class="small text-muted ms-2">
+              A$299 application fee<br>
+              (non-refundable, subject to approval)
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cohort 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style p-4 h-100">
+          <h6 class="fw-bold text-dark-blue mb-2">June Cohort</h6>
+          <div class="text-muted small mb-2">
+            5 June 2025 – 5 September 2025 <br>
+            Melbourne, Australia &amp; Remote
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <a href="#" class="btn btn-primary px-4 py-2">
+              Apply Now &rarr;
+            </a>
+            <div class="small text-muted ms-2">
+              A$299 application fee<br>
+              (non-refundable, subject to approval)
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cohort 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style p-4 h-100">
+          <h6 class="fw-bold text-dark-blue mb-2">September Cohort</h6>
+          <div class="text-muted small mb-2">
+            5 September 2025 – 5 December 2025 <br>
+            Melbourne, Australia &amp; Remote
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <a href="#" class="btn btn-primary  px-4 py-2">
+              Apply Now &rarr;
+            </a>
+            <div class="small text-muted ms-2">
+              A$299 application fee<br>
+              (non-refundable, subject to approval)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-pastel-blue" id="WhyGIofAI">
+  <div class="container">
+    <!-- Title & Intro -->
+    <div class="text-center mb-4">
+      <h2 class="section-title mb-3">Why GIofAI</h2>
+      <p class="mx-auto text-muted" style="max-width: 1100px; font-size: 1.08rem;">
+        Global Institute of Artificial Intelligence strives to be the leading voice in AI innovation, bringing together thought leaders, experts, and professionals dedicated to harnessing the power of artificial intelligence for the greater good of society. We are committed to advancing cutting-edge research and providing world-class education that empowers individuals to not only master AI technologies but also understand their broader implications. Through our initiatives, we foster a vibrant community of leaders who are equipped to use AI responsibly, ensuring its ethical application in solving real-world challenges. By championing ethical AI practices, we aim to drive a positive, transformative impact across industries, communities, and the global landscape, promoting AI as a force for good in shaping a sustainable and equitable future.
+      </p>
+    </div>
+    <!-- Feature Cards -->
+    <div class="row g-4 justify-content-center">
+      <!-- 1-on-1 Training -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style h-100 p-4">
+          <h4 class="fw-bold text-dark-blue mb-2">1-on-1 Training</h4>
+          <p class="text-muted mb-0">
+            Our 1-on-1 Training is designed to provide personalized, hands-on guidance from experienced trainers, ensuring that you get the most out of your learning journey. This tailored approach allows us to focus specifically on your unique goals, challenges, and learning pace.
+          </p>
+        </div>
+      </div>
+      <!-- Certifications -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style h-100 p-4">
+          <h4 class="fw-bold text-dark-blue mb-2">Certifications</h4>
+          <p class="text-muted mb-0">
+            Qualified candidates in the Data Engineering Career Starter Training will earn certifications such as AZ-900, DP-900, DP-203, the GIofAI Member Certificate, and the GIofAI Graduate Certificate, validating their expertise and boosting professional credibility. Top 10% performers will be awarded the GIofAI Order of Merit, recognizing exceptional achievement and enhancing career prospects.
+          </p>
+        </div>
+      </div>
+      <!-- Custom Resume Building -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style h-100 p-4">
+          <h4 class="fw-bold text-dark-blue mb-2">Customized Resume Building</h4>
+          <p class="text-muted mb-0">
+            Our Customized Resume Building service is designed to help you stand out in today’s competitive job market by showcasing your unique skills, experiences, and accomplishments in Data Engineering and AI. We understand that a well-crafted resume can make all the difference when applying for top-tier positions, and our goal is to ensure your resume aligns with industry standards and highlights your strengths.
+          </p>
+        </div>
+      </div>
+      <!-- Flexible Learning -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style h-100 p-4">
+          <h4 class="fw-bold text-dark-blue mb-2">Flexible Learning Options</h4>
+          <p class="text-muted mb-0">
+            We understand that life is busy, and balancing work, study, and personal commitments can be challenging. That's why our DE CST offers a range of Flexible Learning Options designed to fit into your schedule and learning preferences, ensuring you can advance your career without compromise.
+          </p>
+        </div>
+      </div>
+      <!-- Networking -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style h-100 p-4">
+          <h4 class="fw-bold text-dark-blue mb-2">Exclusive Networking Opportunities</h4>
+          <p class="text-muted mb-0">
+            At the Global Institute of Artificial Intelligence (GIofAI), we believe in the power of community and the value of connecting with like-minded professionals who share your passion for AI and Data Engineering. As part of our program, you'll gain access to exclusive networking opportunities that will help you expand your professional network, enhance your career prospects, and stay connected to the latest industry trends.
+          </p>
+        </div>
+      </div>
+      <!-- Support -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-style h-100 p-4">
+          <h4 class="fw-bold text-dark-blue mb-2">Extensive Student Support</h4>
+          <p class="text-muted mb-0">
+            We provide robust and dedicated 1-on-1 support to ensure that every challenge is addressed and every milestone is achieved with ease. Our experienced trainers are committed to guiding you through each step of your learning journey, offering personalized assistance and constructive feedback. Whether you're tackling difficult concepts or celebrating your achievements, our support system ensures you're never alone. Your success is our priority, and we're here to help you every step of the way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-white" id="Journey">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title mb-3">Journey</h2>
+      <p class="lead text-muted mx-auto" style="max-width:700px;">
+        Your step-by-step learning path to mastering Data Engineering—combining theory, hands-on experience, and real-world capstone projects.
+      </p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <!-- Timeline Vertical -->
+        <div class="timeline">
+          <!-- Week 1 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">1</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 1: Data & Cloud Fundamentals</h5>
+              <p class="mb-0 text-muted">Strong foundation in Azure Fundamentals and Data Fundamentals, exploring key concepts and tools essential for Data Engineering.</p>
+            </div>
+          </div>
+          <!-- Week 2 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">2</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 2: Data Engineering Tools and Technology</h5>
+              <p class="mb-0 text-muted">Dive deeper into the core tools and technologies used in Data Engineering, including data storage, processing, and transformation frameworks.</p>
+            </div>
+          </div>
+          <!-- Week 3 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">3</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 3: Database Management</h5>
+              <p class="mb-0 text-muted">Master key database tools like Azure Data Studio, Cosmos DB, SQL Database, and Azure Synapse Analytics, while exploring Data Lakes, Data Warehouses, and more.</p>
+            </div>
+          </div>
+          <!-- Week 4 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">4</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 4: Data Storage and Batch Pipelines</h5>
+              <p class="mb-0 text-muted">Dive into Data Storage and Batch Pipelines, mastering tools like Kubernetes, SQL, dbt, Airflow, and Azure Data Factory. You'll also explore Data Lake Storage Gen2, Azure Databricks, and Stream Analytics.</p>
+            </div>
+          </div>
+          <!-- Week 5 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">5</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 5: Data at Scale</h5>
+              <p class="mb-0 text-muted">Learn to scale data processing with Apache Spark on Azure Synapse Analytics, Pub/Sub Spark Dataflow, and implement Data Governance using tools like Purview and Collibra.</p>
+            </div>
+          </div>
+          <!-- Week 6 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">6</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 6: Data Visualization</h5>
+              <p class="mb-0 text-muted">Explore Data Visualization using tools like PowerBI and Tableau, while preparing for the industry recognized Certification Exam.</p>
+            </div>
+          </div>
+          <!-- Week 7-9 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">7</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 7, 8, 9: Capstone Project</h5>
+              <p class="mb-0 text-muted">Skills to real-world Capstone Projects, tackling end-to-end data engineering challenges and hands-on experience to demonstrate your expertise in data storage, pipelines, governance, and visualization, preparing you for success in the industry.</p>
+            </div>
+          </div>
+          <!-- Week 10-12 -->
+          <div class="timeline-step d-flex align-items-start mb-4">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">8</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Weeks 10, 11, 12: Capstone Project 2</h5>
+              <p class="mb-0 text-muted">Focus on Capstone Project 2, while attending Mock Interviews, a Job and Consulting Info Session, and culminates in the GIofAI Final Certification Exam to validate your expertise.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Timeline -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-pastel-blue" id="FAQ">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="section-title mb-4 text-center">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                Who will be the faculty?
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                All our faculty members are distinguished industry experts and quality trainers, mentored by seasoned industry veterans.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                What is the maximum discount / financial support I can get?
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                <ul class="mb-1">
+                  <li>Discounts and scholarships are available.</li>
+                  <li>Program placement support extended for up to 6 months from cohort start date.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                How flexible is the program considering I am a working professional?
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                Our program is customised for the participant. We have a tailored curriculum. We provide session recordings through our LMS so you can go through it at your convenience. We have a robust trainer and support system to answer all your doubts and queries (Mon-Fri 10am to 5pm).
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                I may not be able to attend the live sessions?
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                All session recordings are made available on the LMS.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                What kind of student support will I receive?
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                We provide dedicated support for each cohort. In addition, our trainers and mentors provide support through various mediums.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 6 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq6">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                What types of projects will I be able to work on?
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                Our capstone projects are continuously evolving to align with industry demands and the structure of each cohort. Generally, we offer real-world projects that provide valuable industry knowledge and leverage, ensuring you are well-prepared for the professional environment.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 7 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq7">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                Where can I view the curriculum?
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                Our standard curriculum is available on the program page. However, the actual curriculum is customized and tailored to match each cohort’s skills, strengths, weaknesses, and career goals. We will be able to provide more detailed insights once you pass our entrance exam.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 8 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq8">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                Why GIofAI does not have any tie up with any recruitment agencies?
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                At the Global Institute for Artificial Intelligence (GIofAI), we prioritise the success of our students through direct industry connections and a robust network of partners. Instead of relying on recruitment agencies, we leverage our extensive industry relationships to facilitate job placements. This approach ensures that our students receive personalized guidance and access to exclusive opportunities that are tailored to their skills and career aspirations.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 9 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq9">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                How many interview opportunities will be provided?
+              </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                While we do not commit to a specific number of interview opportunities, we provide extensive support through our industry connections, optional mentorship sessions, and career development resources to maximize your chances of success.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 10 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq10">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                What will happen if I do not pass the industry certification exam or final GIofAI exam?
+              </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                If you do not pass the industry certification exam, we provide resources and support to help you prepare to retake the test. If you do not pass the GIofAI final exam, you will still receive a member certification, recognizing your participation and skills developed.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 11 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq11">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                Can I get a tuition loan?
+              </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                We do not directly provide tuition loans, but can offer guidance and supporting documents to help you apply for loans through your financial institution.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 12 -->
+          <div class="accordion-item bg-white mb-2 rounded-3 shadow-sm">
+            <h2 class="accordion-header" id="faq12">
+              <button class="accordion-button collapsed bg-white text-dark-blue fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                What is the value of the program and GIofAI certifications?
+              </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="faq12" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                GIofAI certifications are crafted by industry veterans, globally recognized, and supported by strong placement assistance, a powerful professional network, flexible learning options, and robust student support—helping you stand out and advance your career.
+              </div>
+            </div>
+          </div>
+          <!-- Add more FAQs as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer Start -->
+  <footer class="bg-dark-blue text-white pt-5 position-relative">
+   <div class="container position-relative z-2">
+    <div class="row text-center text-md-start g-4">
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Need Help?
+      </h6>
+      <p class="small text-muted">
+       Contact us for any queries you have about GIofAI membership, trainings and mentorship programs.
+      </p>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Call GIofAI
+      </h6>
+      <p class="mb-1 small text-muted fw-semibold">
+       National Office
+      </p>
+      <p class="mb-2 small text-muted fw-semibold">
+       Phone: 1800 434 008
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       Contact
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Find An Answer
+      </h6>
+      <p class="mb-1 small text-muted">
+       Have a question?
+       <br/>
+       We can help.
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       View FAQ
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Give Us Feedback
+      </h6>
+      <p class="mb-2 small text-muted">
+       We would love to know your thoughts.
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       Provide feedback
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+    </div>
+    <hr class="border-light my-4"/>
+    <div class="row align-items-center small">
+     <div class="col-md-6 d-flex flex-wrap gap-3 justify-content-center justify-content-md-start mb-3 mb-md-0">
+      <a class="text-white text-decoration-none" href="#">
+       Terms of Service
+      </a>
+      <a class="text-white text-decoration-none" href="#">
+       Privacy Policy
+      </a>
+      <a class="text-white text-decoration-none" href="#">
+       FAQ
+      </a>
+     </div>
+     <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-facebook">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-instagram">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-linkedin">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="text-center text-muted small mt-3">
+     All Rights Reserved © 2024 - GIofAI
+    </div>
+   </div>
+   <!-- Watermark -->
+   <div class="footer-watermark">
+    GIOFAI
+   </div>
+  </footer>
+  <!-- Footer End -->
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="scripts.js"></script>
+
+</body>
+</html>

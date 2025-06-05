@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>About GIofAI</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Your Main Style -->
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+      <header class="navbar-custom fixed-top bg-white shadow-sm">
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+     <!-- Logo Left -->
+     <a class="navbar-brand" href="#">
+      <img alt="GIofAI Logo" src="giofaiIcon.webp"/>
+     </a>
+     <!-- Mobile Toggler -->
+     <button class="navbar-toggler btn-primary" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!-- Centered Menu -->
+     <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav mx-auto gap-lg-4 gap-3 text-center">
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+         About
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="programsDropdown" role="button">
+         Programs &amp; Events
+        </a>
+        <ul aria-labelledby="programsDropdown" class="dropdown-menu bg-dark-blue text-pastel-yellow">
+         <!-- Programs -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Programs
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Career Starter Training
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data Engineering CST
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Engineering CST
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Career Transition Mentorship
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data Engineering CMT
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Engineering CMT
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <!-- Leadership Development -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Leadership Development
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li>
+            <a class="dropdown-item" href="#">
+             AI Leadership and Strategy Program
+            </a>
+           </li>
+          </ul>
+         </li>
+         <!-- Workshop & Masterclass -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Workshop &amp; Masterclass
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Agentic AI Masterclass
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data and AI Hackathon
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Strategy &amp; Readiness
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <!-- Corporate -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Corporate
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li>
+            <a class="dropdown-item" href="#">
+             Corporate Training Services
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+         Team
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">
+         Community
+        </a>
+        <ul class="dropdown-menu bg-dark-blue text-pastel-yellow">
+         <li>
+          <a class="dropdown-item" href="#">
+           News
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" href="#">
+           Group
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+         Contact
+        </a>
+       </li>
+      </ul>
+      <!-- Mobile Only Auth Buttons (no bullet, centered, styled as buttons) -->
+      <ul class="navbar-nav list-unstyled d-lg-none w-100 text-center my-2">
+       <li class="nav-item mb-2">
+        <a class="btn btn-primary btn-sm w-75" href="#">
+         Sign In
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="btn btn-primary btn-sm w-75" href="#">
+         Sign Up
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Right Side Buttons on Desktop -->
+     <div class="d-none d-lg-flex ms-auto gap-2">
+      <a class="btn btn-primary btn-sm px-3" href="#">
+       Sign In
+      </a>
+      <a class="btn btn-primary btn-sm px-3" href="#">
+       Sign Up
+      </a>
+      <!-- User Icon dropdown (only shown after login) -->
+      <ul class="navbar-nav d-none" id="userMenu">
+       <li class="nav-item dropdown">
+        <a class="nav-link text-warning" data-bs-toggle="dropdown" href="#">
+         <i class="fa-solid fa-user fs-5">
+         </i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark-blue border-0">
+         <li>
+          <a class="dropdown-item text-warning" href="#">
+           Dashboard
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item text-warning" href="#">
+           Logout
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- ABOUT HERO -->
+  <section class="py-5 bg-pastel-blue">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">About GIofAI</h2>
+          <p class="text-muted small mb-2">
+            Our community is a dynamic hub where learners, professionals, and experts converge to share knowledge, ideas, and experiences.
+          </p>
+          <p class="text-muted small">
+            GIofAI advances society through dissemination and application of knowledge in the field of artificial intelligence.
+          </p>
+          <a class="btn btn-primary mt-3" href="#">Learn More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="GIofAI Illustration"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <!-- Left: Main Title and Text -->
+        <div class="col-lg-6">
+          <div class="mb-3 text-uppercase fw-bold text-dark-blue" style="letter-spacing:1px;font-size:16px;">
+            WHAT WE DO
+          </div>
+          <h2 class="section-title mb-4">
+            Enabling Responsible AI<br>
+            Innovation and Societal<br>
+            Advancement
+          </h2>
+          <p class="lead mb-4 text-dark-blue fw-normal" style="font-size: 1.1rem;">
+            The purpose of the Global Institute of Artificial Intelligence (GIofAI) is to advance and enhance society through the dissemination and application of knowledge in the field of artificial intelligence.
+          </p>
+          <div class="d-flex flex-wrap align-items-center gap-4 mt-4">
+            <a href="#" class="btn btn-primary btn-lg px-4 py-2 rounded-pill fw-bold">
+              BECOME A MEMBER <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#purpose" class="fw-bold text-dark-blue text-decoration-none" style="font-size:1rem;">
+              WHY BECOME A MEMBER? <i class="fa-solid fa-arrow-down ms-1"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Right: Feature Boxes -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card-style p-4 bg-pastel-blue border-0 h-100">
+                <div class="icon-circle mb-2"><i class="fa-solid fa-plus"></i></div>
+                <h5 class="fw-bold text-dark-blue mb-2">AI & DATA LEADERSHIP</h5>
+                <p class="text-muted mb-3 small">
+                  As the autonomous representative body of experts in AI and Data, we offer a distinctive viewpoint, enriched by our members’ expertise, regarding Australia's challenges.
+                </p>
+                <a href="#" class="fw-bold text-dark-blue text-decoration-none small">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-style p-4 bg-pastel-blue border-0 h-100">
+                <div class="icon-circle mb-2"><i class="fa-solid fa-lightbulb"></i></div>
+                <h5 class="fw-bold text-dark-blue mb-2">MEMBERSHIP</h5>
+                <p class="text-muted mb-3 small">
+                  GIofAI membership guides and empowers you with resources, enabling your full potential and meaningful contribution to AI and data.
+                </p>
+                <a href="#" class="fw-bold text-dark-blue text-decoration-none small">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-style p-4 bg-pastel-blue border-0 h-100">
+                <div class="icon-circle mb-2"><i class="fa-solid fa-users"></i></div>
+                <h5 class="fw-bold text-dark-blue mb-2">WORK AT GIofAI</h5>
+                <p class="text-muted mb-3 small">
+                  We have a values-driven, positive culture and we value the professional and personal lives of our people.
+                </p>
+                <a href="#" class="fw-bold text-dark-blue text-decoration-none small">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-style p-4 bg-pastel-blue border-0 h-100">
+                <div class="icon-circle mb-2"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h5 class="fw-bold text-dark-blue mb-2">DATA & AI MENTORSHIP</h5>
+                <p class="text-muted mb-3 small">
+                  We are dedicated to improving the AI skills of Australian professionals, aiding their transition into new work methodologies.
+                </p>
+                <a href="#" class="fw-bold text-dark-blue text-decoration-none small">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECONCILIATION ACTION PLAN (dark bg, overlay) -->
+  <section class="position-relative bg-dark-blue" style="background: url('https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=1400&q=80') center center/cover no-repeat; min-height: 500px;">
+    <div class="container h-100 py-5">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 d-none d-lg-block"></div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <div class="bg-dark-blue text-white p-5 rounded-3 shadow-lg" style="--bs-bg-opacity: 0.95;">
+            <h2 class="fw-bold section-title mb-3 text-white" style="font-size:2rem;">Reconciliation Action Plan</h2>
+            <p class="lead mb-4 text-white" style="font-size:1.05rem;">
+              The GIofAI’s first Reconciliation Action Plan (RAP) represents an important commitment to foster greater economic and social equity for Aboriginal and Torres Strait Islander Peoples.
+            </p>
+            <a href="#" class="btn btn-warning btn-lg px-4 py-2 rounded-pill fw-bold text-dark-blue" style="background-color: var(--accent-yellow); border:none;">
+              LET START <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY, VISION, PURPOSE, MISSION -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <!-- Title & About -->
+        <div class="col-lg-6">
+          <h6 class="text-uppercase text-accent-yellow mb-2" style="letter-spacing: 1px;">Who We Are</h6>
+          <h2 class="section-title mb-3" style="font-size:2rem;line-height:1.2;">
+            Our history, vision, mission<br>and current goals.
+          </h2>
+        </div>
+        <!-- Description & Button -->
+        <div class="col-lg-6">
+          <p class="text-muted" style="font-size:1.05rem;">
+            The genesis of the Global Institute of Artificial Intelligence (GIofAI) can be traced to its predecessor, the Open AI Research organization, which emerged in 2018. Evolving from community-oriented roots, it shifted to a more structured and sophisticated institutional framework, culminating in the establishment of GIofAI.
+          </p>
+          <a href="#" class="btn btn-primary px-4 py-2 mt-2 rounded-pill">
+            LET START <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row mt-5 g-4">
+        <div class="col-lg-6">
+          <div class="bg-pastel-blue rounded-4 p-4 h-100 d-flex align-items-center">
+            <div>
+              <div class="mb-3">
+                <i class="fa-solid fa-chart-simple fs-2 text-dark-blue"></i>
+              </div>
+              <h5 class="fw-bold mb-2 text-dark-blue">Purpose</h5>
+              <p class="text-muted mb-0" style="font-size:1rem;">
+                The purpose of GIofAI is to advance and enhance society through the dissemination and application of knowledge in the field of artificial intelligence.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-pastel-blue rounded-4 p-4 h-100 d-flex align-items-center justify-content-center">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" alt="AI Hand Human Hand" class="img-fluid rounded-4 shadow" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 g-4">
+        <div class="col-lg-6 order-lg-1 order-2">
+          <div class="bg-pastel-blue rounded-4 p-4 h-100 d-flex align-items-center justify-content-center">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" alt="AI Hand Human Hand" class="img-fluid rounded-4 shadow" />
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2 order-1">
+          <div class="bg-pastel-blue rounded-4 p-4 h-100">
+            <div class="mb-3">
+              <i class="fa-solid fa-award fs-2 text-dark-blue"></i>
+            </div>
+            <h5 class="fw-bold mb-2 text-dark-blue">Mission</h5>
+            <p class="text-muted mb-0" style="font-size:1rem;">
+              Our mission at GIofAI is to serve as the premier independent and trusted voice of AI innovation globally. We foster a community of leaders equipped to harness the power of AI for society's betterment. Through our initiatives, research, and educational programs, we build capabilities, promote ethical AI, and drive positive impact.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Start -->
+  <footer class="bg-dark-blue text-white pt-5 position-relative">
+   <div class="container position-relative z-2">
+    <div class="row text-center text-md-start g-4">
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Need Help?
+      </h6>
+      <p class="small text-muted">
+       Contact us for any queries you have about GIofAI membership, trainings and mentorship programs.
+      </p>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Call GIofAI
+      </h6>
+      <p class="mb-1 small text-muted fw-semibold">
+       National Office
+      </p>
+      <p class="mb-2 small text-muted fw-semibold">
+       Phone: 1800 434 008
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       Contact
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Find An Answer
+      </h6>
+      <p class="mb-1 small text-muted">
+       Have a question?
+       <br/>
+       We can help.
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       View FAQ
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Give Us Feedback
+      </h6>
+      <p class="mb-2 small text-muted">
+       We would love to know your thoughts.
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       Provide feedback
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+    </div>
+    <hr class="border-light my-4"/>
+    <div class="row align-items-center small">
+     <div class="col-md-6 d-flex flex-wrap gap-3 justify-content-center justify-content-md-start mb-3 mb-md-0">
+      <a class="text-white text-decoration-none" href="#">
+       Terms of Service
+      </a>
+      <a class="text-white text-decoration-none" href="#">
+       Privacy Policy
+      </a>
+      <a class="text-white text-decoration-none" href="#">
+       FAQ
+      </a>
+     </div>
+     <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-facebook">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-instagram">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-linkedin">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="text-center text-muted small mt-3">
+     All Rights Reserved © 2024 - GIofAI
+    </div>
+   </div>
+   <!-- Watermark -->
+   <div class="footer-watermark">
+    GIOFAI
+   </div>
+  </footer>
+  <!-- Footer End -->
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
