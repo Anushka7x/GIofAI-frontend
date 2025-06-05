@@ -63,3 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const btn = document.getElementById('readMoreBtn');
       btn.innerText = btn.innerText === 'Read More' ? 'Show Less' : 'Read More';
     }
+// Tooltip for all mentor page
+    const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltips.forEach(t => new bootstrap.Tooltip(t));
+ 
