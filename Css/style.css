@@ -333,7 +333,7 @@ header.navbar-custom {
   .timeline-marker { margin-right: 1rem !important; }
 }
 /* Mentor Profile PAge */
-    /* Only add this if it's not already present in your style.css! */
+    /* Only add this if it's not already present in your /Css/style.css! */
     .section-title-left {
       font-size: 2.2rem;
       font-weight: 800;
@@ -433,3 +433,4 @@ header.navbar-custom {
       z-index: 2;
     }
     .card-style:hover .social-icons { opacity: 1; transform: translateY(0); }
+  
