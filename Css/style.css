@@ -433,4 +433,9 @@ header.navbar-custom {
       z-index: 2;
     }
     .card-style:hover .social-icons { opacity: 1; transform: translateY(0); }
-  
+  /* data -ai-hackathon */
+  /* Add to your style.css */
+.popover {
+  max-width: 500px;
+  font-size: 10px;
+}

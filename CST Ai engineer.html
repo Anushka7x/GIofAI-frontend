@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
   <!-- Your Main Style -->
   <link href="/Css/style.css" rel="stylesheet"/>
 </head>
@@ -216,7 +218,7 @@
   </header>
   <!-- Header End -->
  <!-- Hero / Intro Section -->
-  <section class="py-5 bg-dark-blue">
+<section class="py-5 bg-dark-blue" data-aos="fade-up">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
@@ -241,11 +243,11 @@ Globally, countries like the United States, China, Germany, and the UK are exper
     </div>
   </section>
   <!-- End Hero -->
-<section class="py-5" id="Overview">
+<section class="py-5" id="Overview" data-aos="fade-up" data-aos-delay="150">
   <div class="container">
     <div class="row">
       <!-- Left: Overview Text -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12" data-aos="fade-right" data-aos-delay="200">
         <div class="mb-4">
           <h2 class="section-title-left mb20">OVERVIEW</h2>
           <p>
@@ -260,7 +262,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Right: Video Poster with Play Button -->
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="250">
         <div class="institute-video-container mb20">
           <style>
             .video-container {
@@ -327,13 +329,12 @@ Globally, countries like the United States, China, Germany, and the UK are exper
   </div>
 </section>
 
-  <!-- Highlights Section -->
-<section class="py-5 bg-pastel-blue">
+<section class="py-5 bg-pastel-blue" data-aos="fade-up" data-aos-delay="200">
   <div class="container">
     <div class="row g-4 justify-content-center">
 
       <!-- LUCRATIVE CAREERS -->
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="100">
         <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
             <span class="icon-circle fs-2">
@@ -347,10 +348,8 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
 
-  
-
       <!-- CAREER STABILITY AND ADVANCEMENT -->
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="200">
         <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
             <span class="icon-circle fs-2">
@@ -360,11 +359,13 @@ Globally, countries like the United States, China, Germany, and the UK are exper
           <h5 class="fw-bold text-dark-blue mb-2">CAREER STABILITY<br>AND ADVANCEMENT</h5>
           <p class="text-muted mb-0" style="min-height:80px;">
             Transition into high-paying roles in tech giants and cutting-edge startups.
-          </p></div></div>
-                <div class="col-md-4 d-flex">
+          </p>
+        </div>
+      </div>
 
-                  <div class="card-style flex-fill p-4 h-100">
-
+      <!-- HIGH DEMAND -->
+      <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
             <span class="icon-circle fs-2">
               <i class="fa-regular fa-file-lines"></i>
@@ -376,8 +377,9 @@ Globally, countries like the United States, China, Germany, and the UK are exper
           </p>
         </div>
       </div>
-    <!-- TOP COMPANIES (CENTER, 2x width) -->
-      <div class="col-md-8 d-flex">
+
+      <!-- TOP COMPANIES (CENTER, 2x width) -->
+      <div class="col-md-8 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="card-style flex-fill p-4 h-100 d-flex flex-column align-items-center justify-content-center">
           <h5 class="fw-bold text-dark-blue text-center mb-3">Top companies hiring in this industry</h5>
           <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
@@ -388,7 +390,6 @@ Globally, countries like the United States, China, Germany, and the UK are exper
             <img src="fortescue.png" alt="Fortescue" style="height:36px;">
             <img src="coles.png" alt="Coles" style="height:36px;">
             <img src="verint.png" alt="Verint" style="height:36px;">
-            <!-- Add actual image paths or use text if images not available -->
           </div>
         </div>
       </div>
@@ -397,7 +398,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
     <!-- Second row for INDUSTRY GROWTH & SALARY EXPERT -->
     <div class="row g-4 justify-content-center mt-2">
       <!-- INDUSTRY GROWTH -->
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="500">
         <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
             <span class="icon-circle fs-2">
@@ -411,15 +412,14 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- SALARY EXPERT (HANDSHAKE) -->
-      <div class="col-md-6 d-flex">
+      <div class="col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
         <div class="card-style flex-fill p-4 h-100 d-flex align-items-center">
-                    <div class="mb-3">
-
-          <span class="icon-circle fs-2">
-            <i class="fa-solid fa-handshake"></i>
-          </span>
-          <div>          </div>
-
+          <div class="mb-3">
+            <span class="icon-circle fs-2">
+              <i class="fa-solid fa-handshake"></i>
+            </span>
+          </div>
+          <div>
             <p class="mb-0 text-muted">
               As per <a href="https://www.salaryexpert.com/" target="_blank" class="text-dark-blue">Salaryexpert.com</a>,
               average salary for AI Engineers will be 186,646 by 2029
@@ -435,14 +435,14 @@ Globally, countries like the United States, China, Germany, and the UK are exper
 
 
 <!-- Program Dates & Cohorts Section -->
-<section class="py-5 bg-white" id="Dates">
+<section class="py-5 bg-white" id="Dates" data-aos="fade-up">
   <div class="container">
-    <div class="section-title text-dark-blue mb-4 text-center">
+    <div class="section-title text-dark-blue mb-4 text-center" data-aos="fade-up" data-aos-delay="100">
       Program Dates & Cohorts
     </div>
     <div class="row g-4 justify-content-center">
       <!-- Cohort 1 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
         <div class="card-style p-4 h-100">
           <h6 class="fw-bold text-dark-blue mb-2">March Cohort</h6>
           <div class="text-muted small mb-2">
@@ -461,7 +461,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Cohort 2 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
         <div class="card-style p-4 h-100">
           <h6 class="fw-bold text-dark-blue mb-2">June Cohort</h6>
           <div class="text-muted small mb-2">
@@ -479,8 +479,8 @@ Globally, countries like the United States, China, Germany, and the UK are exper
           </div>
         </div>
       </div>
-      <!-- Cohort 3 (UPDATED) -->
-      <div class="col-md-6 col-lg-4">
+      <!-- Cohort 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
         <div class="card-style p-4 h-100">
           <h6 class="fw-bold text-dark-blue mb-2">September Cohort</h6>
           <div class="text-muted small mb-2">
@@ -502,10 +502,10 @@ Globally, countries like the United States, China, Germany, and the UK are exper
   </div>
 </section>
 
-<section class="py-5 bg-pastel-blue" id="WhyGIofAI">
+<section class="py-5 bg-pastel-blue" id="WhyGIofAI" data-aos="fade-up">
   <div class="container">
     <!-- Title & Intro -->
-    <div class="text-center mb-4">
+    <div class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">
       <h2 class="section-title mb-3">Why GIofAI</h2>
       <p class="mx-auto text-muted" style="max-width: 1100px; font-size: 1.08rem;">
         Global Institute of Artificial Intelligence strives to be the leading voice in AI innovation, bringing together thought leaders, experts, and professionals dedicated to harnessing the power of artificial intelligence for the greater good of society. We are committed to advancing cutting-edge research and providing world-class education that empowers individuals to not only master AI technologies but also understand their broader implications. Through our initiatives, we foster a vibrant community of leaders who are equipped to use AI responsibly, ensuring its ethical application in solving real-world challenges. By championing ethical AI practices, we aim to drive a positive, transformative impact across industries, communities, and the global landscape, promoting AI as a force for good in shaping a sustainable and equitable future.
@@ -514,7 +514,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
     <!-- Feature Cards -->
     <div class="row g-4 justify-content-center">
       <!-- 1-on-1 Training -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">1-on-1 Training</h4>
           <p class="text-muted mb-0">
@@ -523,7 +523,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Certifications -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Certifications</h4>
           <p class="text-muted mb-0">
@@ -532,7 +532,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Custom Resume Building -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Customized Resume Building</h4>
           <p class="text-muted mb-0">
@@ -541,7 +541,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Flexible Learning -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Flexible Learning Options</h4>
           <p class="text-muted mb-0">
@@ -550,7 +550,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Networking -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Exclusive Networking Opportunities</h4>
           <p class="text-muted mb-0">
@@ -559,7 +559,7 @@ Globally, countries like the United States, China, Germany, and the UK are exper
         </div>
       </div>
       <!-- Support -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Extensive Student Support</h4>
           <p class="text-muted mb-0">
@@ -572,142 +572,144 @@ Globally, countries like the United States, China, Germany, and the UK are exper
 </section>
 
 <!-- Journey -->
- <section class="py-5 bg-white" id="Journey">
+<section class="py-5 bg-white" id="Journey">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title mb-3">Journey</h2>
-      <p class="lead text-muted mx-auto" style="max-width:700px;">
+      <h2 class="section-title mb-3" data-aos="fade-down">Journey</h2>
+      <p class="lead text-muted mx-auto" style="max-width:700px;" data-aos="fade-up" data-aos-delay="150">
         Your step-by-step learning path to mastering Data Engineering—combining theory, hands-on experience, and real-world capstone projects.
       </p>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <!-- Timeline Vertical -->
-<div class="timeline">
-  <!-- Week 1 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">1</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 1: Introduction to Machine Learning Algorithms</h5>
-      <p class="mb-0 text-muted">Exploring machine learning algorithms and their foundations through live training and 1-on-1 sessions, while implementing simple models to kickstart your career.</p>
+        <div class="timeline">
+          <!-- Week 1 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">1</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 1: Introduction to Machine Learning Algorithms</h5>
+              <p class="mb-0 text-muted">Exploring machine learning algorithms and their foundations through live training and 1-on-1 sessions, while implementing simple models to kickstart your career.</p>
+            </div>
+          </div>
+          <!-- Week 2 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">2</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 2: Introduction to AI and Cloud Platforms (AZURE &amp; AWS)</h5>
+              <p class="mb-0 text-muted">Dive into AI basics and explore cloud platforms like Azure and AWS. Gain hands-on experience through practical exercises and kickstart your certification preparation.</p>
+            </div>
+          </div>
+          <!-- Week 3 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">3</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 3: Data Handling on Cloud, Supervised Learning and Model Evaluation</h5>
+              <p class="mb-0 text-muted">Master supervised learning, model evaluation, and data handling on Azure and AWS, with hands-on exercises. Prepare for and complete the AI-900 and AZ-900 certification exams.</p>
+            </div>
+          </div>
+          <!-- Week 4 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">4</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 4: Unsupervised Learning and Clustering</h5>
+              <p class="mb-0 text-muted">Explore unsupervised learning, dimensionality reduction, and model deployment on Azure, with hands-on practice using Databricks and Snowflake. Focus on AI-102 certification preparation.</p>
+            </div>
+          </div>
+          <!-- Week 5 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">5</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 5: Deep Learning and Neural Networks</h5>
+              <p class="mb-0 text-muted">Learn deep learning, neural networks, and CNNs with TensorFlow and Keras, while preparing for the AI-102 certification.</p>
+            </div>
+          </div>
+          <!-- Week 6 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">6</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 6: Natural Language Processing</h5>
+              <p class="mb-0 text-muted">Gain a solid understanding of NLP fundamentals and explore cloud-based NLP services. Enhance your skills with hands-on practical exercises.</p>
+            </div>
+          </div>
+          <!-- Week 7 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">7</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 7: Computer Vision</h5>
+              <p class="mb-0 text-muted">Delve into computer vision concepts and explore cloud-based vision services. Refine your skills through hands-on practical exercises.</p>
+            </div>
+          </div>
+          <!-- Week 8 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">8</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 8: Robotics &amp; AI Automation</h5>
+              <p class="mb-0 text-muted">Explore robotics and automation, with a focus on NLP and computer vision on the cloud. Gain practical insights into integrating these technologies for advanced solutions.</p>
+            </div>
+          </div>
+          <!-- Week 9 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">9</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 9: AI System Design and Architecture on Cloud</h5>
+              <p class="mb-0 text-muted">Focus on AI system design, microservices, and containerization through hands-on practical exercises. Prepare for the Azure AI Engineer Associate (AI-102) certification exam.</p>
+            </div>
+          </div>
+          <!-- Week 10 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">10</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 10: AI Ethics, Governance and Compliance</h5>
+              <p class="mb-0 text-muted">Examine AI ethics, governance, and compliance through in-depth discussions and practical exercises. Develop a strong understanding of ethical considerations in AI implementation.</p>
+            </div>
+          </div>
+          <!-- Weeks 11,12 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">11</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Weeks 11,12: Capstone Project</h5>
+              <p class="mb-0 text-muted">Work on your Capstone Project, covering project selection, development, deployment, and presentation. Receive weekly 1-on-1 guidance and complete practical exercises, with an optional 3-week extension offering networking opportunities.</p>
+            </div>
+          </div>
+          <!-- Week 12 -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
+            <div class="timeline-marker flex-shrink-0 me-4">
+              <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">12</span>
+            </div>
+            <div class="timeline-content">
+              <h5 class="fw-bold mb-1 text-dark-blue">Week 12: Final Presentations, Certifications, and Career Transition</h5>
+              <p class="mb-0 text-muted">Present your final projects, complete certifications, and receive career transition support. Celebrate your achievements at the GIofAI Graduation Ceremony and take the final examination for certification awards.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Timeline -->
+      </div>
     </div>
   </div>
-  <!-- Week 2 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">2</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 2: Introduction to AI and Cloud Platforms (AZURE &amp; AWS)</h5>
-      <p class="mb-0 text-muted">Dive into AI basics and explore cloud platforms like Azure and AWS. Gain hands-on experience through practical exercises and kickstart your certification preparation.</p>
-    </div>
-  </div>
-  <!-- Week 3 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">3</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 3: Data Handling on Cloud, Supervised Learning and Model Evaluation</h5>
-      <p class="mb-0 text-muted">Master supervised learning, model evaluation, and data handling on Azure and AWS, with hands-on exercises. Prepare for and complete the AI-900 and AZ-900 certification exams.</p>
-    </div>
-  </div>
-  <!-- Week 4 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">4</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 4: Unsupervised Learning and Clustering</h5>
-      <p class="mb-0 text-muted">Explore unsupervised learning, dimensionality reduction, and model deployment on Azure, with hands-on practice using Databricks and Snowflake. Focus on AI-102 certification preparation.</p>
-    </div>
-  </div>
-  <!-- Week 5 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">5</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 5: Deep Learning and Neural Networks</h5>
-      <p class="mb-0 text-muted">Learn deep learning, neural networks, and CNNs with TensorFlow and Keras, while preparing for the AI-102 certification.</p>
-    </div>
-  </div>
-  <!-- Week 6 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">6</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 6: Natural Language Processing</h5>
-      <p class="mb-0 text-muted">Gain a solid understanding of NLP fundamentals and explore cloud-based NLP services. Enhance your skills with hands-on practical exercises.</p>
-    </div>
-  </div>
-  <!-- Week 7 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">7</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 7: Computer Vision</h5>
-      <p class="mb-0 text-muted">Delve into computer vision concepts and explore cloud-based vision services. Refine your skills through hands-on practical exercises.</p>
-    </div>
-  </div>
-  <!-- Week 8 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">8</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 8: Robotics &amp; AI Automation</h5>
-      <p class="mb-0 text-muted">Explore robotics and automation, with a focus on NLP and computer vision on the cloud. Gain practical insights into integrating these technologies for advanced solutions.</p>
-    </div>
-  </div>
-  <!-- Week 9 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">9</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 9: AI System Design and Architecture on Cloud</h5>
-      <p class="mb-0 text-muted">Focus on AI system design, microservices, and containerization through hands-on practical exercises. Prepare for the Azure AI Engineer Associate (AI-102) certification exam.</p>
-    </div>
-  </div>
-  <!-- Week 10 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">10</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 10: AI Ethics, Governance and Compliance</h5>
-      <p class="mb-0 text-muted">Examine AI ethics, governance, and compliance through in-depth discussions and practical exercises. Develop a strong understanding of ethical considerations in AI implementation.</p>
-    </div>
-  </div>
-  <!-- Weeks 11,12 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">11</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Weeks 11,12: Capstone Project</h5>
-      <p class="mb-0 text-muted">Work on your Capstone Project, covering project selection, development, deployment, and presentation. Receive weekly 1-on-1 guidance and complete practical exercises, with an optional 3-week extension offering networking opportunities.</p>
-    </div>
-  </div>
-  <!-- Week 12 -->
-  <div class="timeline-step d-flex align-items-start mb-4">
-    <div class="timeline-marker flex-shrink-0 me-4">
-      <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">12</span>
-    </div>
-    <div class="timeline-content">
-      <h5 class="fw-bold mb-1 text-dark-blue">Week 12: Final Presentations, Certifications, and Career Transition</h5>
-      <p class="mb-0 text-muted">Present your final projects, complete certifications, and receive career transition support. Celebrate your achievements at the GIofAI Graduation Ceremony and take the final examination for certification awards.</p>
-    </div>
-  </div>
-</div>
-
-      </div></div></div></section>
-
+</section>
 
 <section class="py-5 bg-pastel-blue" id="FAQ">
   <div class="container">

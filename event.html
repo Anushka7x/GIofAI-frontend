@@ -218,9 +218,9 @@
    </div>
   </header>
   <!-- Header End -->
-
-<!-- HERO SECTION (DARK BLUE BACKGROUND) -->
-<section class="hero-section position-relative text-center text-white d-flex align-items-center justify-content-center" style="height: 70vh; background-color: var(--dark-blue);">
+<!-- HERO SECTION -->
+<section class="hero-section position-relative text-center text-white d-flex align-items-center justify-content-center"
+  style="height: 70vh; background-color: var(--dark-blue);" data-aos="fade-up">
   <div class="container position-relative">
     <h1 class="fw-bold display-3 mb-3">Explore Our Upcoming Events</h1>
     <p class="lead mb-4" style="max-width: 700px; margin: 0 auto;">
@@ -233,7 +233,9 @@
     <path fill="#ffffff" d="M0,64L48,69.3C96,75,192,85,288,96C384,107,480,117,576,112C672,107,768,85,864,85.3C960,85,1056,107,1152,106.7C1248,107,1344,85,1392,74.7L1440,64L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z"></path>
   </svg>
 </section>
-<nav class="nav nav-pills mt-5 mb-4">
+
+<!-- NAV PILLS (with aos) -->
+<nav class="nav nav-pills mt-5 mb-4 justify-content-center" data-aos="fade-down">
   <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#workshops">
     <i class="fas fa-tools me-1"></i> Workshops
   </button>
@@ -248,168 +250,131 @@
   </button>
 </nav>
 
+<!-- EVENTS CONTENT (add aos in event cards only) -->
+<section class="container mb-5 " id="events">
+  <div class="tab-content">
 
-
-
-  <!-- EVENTS CONTENT -->
-  <section class="container mb-5 " id="events">
-    <div class="tab-content">
-
-      <!-- Workshops Tab -->
-      <div class="tab-pane fade show active" id="workshops">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="card-glass">
-              <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="React Workshop">
-              <div class="p-4">
-                <h5 class="fw-bold text-dark">React Bootcamp</h5>
-                <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 20, 2025</p>
-                <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>2:00 PM – 5:00 PM</p>
-                <p class="text-dark small">Hands-on workshop to build real React apps.</p>
-                <a href="#" class="btn btn-primary btn-sm mt-2">Enroll</a>
-              </div>
+    <!-- Workshops Tab -->
+    <div class="tab-pane fade show active" id="workshops">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card-glass">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="React Workshop">
+            <div class="p-4">
+              <h5 class="fw-bold text-dark">React Bootcamp</h5>
+              <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 20, 2025</p>
+              <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>2:00 PM – 5:00 PM</p>
+              <p class="text-dark small">Hands-on workshop to build real React apps.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Enroll</a>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Seminars Tab -->
-      <div class="tab-pane fade" id="seminars">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="card-glass">
-              <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="Cloud Seminar">
-              <div class="p-4">
-                <h5 class="fw-bold text-dark">Cloud Security Seminar</h5>
-                <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 18, 2025</p>
-                <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>11:00 AM – 1:00 PM</p>
-                <p class="text-dark small">Insights on cloud architecture and cybersecurity.</p>
-                <a href="#" class="btn btn-primary btn-sm mt-2">Reserve Seat</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Webinars Tab -->
-      <div class="tab-pane fade" id="webinars">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="card-glass">
-              <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="Data Science Webinar">
-              <div class="p-4">
-                <h5 class="fw-bold text-dark">Intro to Data Science</h5>
-                <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 14, 2025</p>
-                <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>5:00 PM – 6:00 PM</p>
-                <p class="text-dark small">An engaging webinar for beginners in data.</p>
-                <a href="#" class="btn btn-primary btn-sm mt-2">Join</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Meetings Tab -->
-      <div class="tab-pane fade" id="meetings">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="card-glass">
-              <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="Startup Meetup">
-              <div class="p-4">
-                <h5 class="fw-bold text-dark">Startup Leaders Meetup</h5>
-                <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 22, 2025</p>
-                <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>6:00 PM – 8:00 PM</p>
-                <p class="text-dark small">Network with VCs, founders & innovators.</p>
-                <a href="#" class="btn btn-primary btn-sm mt-2">Attend</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <!-- OUR SPEAKERS SECTION -->
-  <section class="py-5 bg-pastel-blue">
-   <div class="container">
-    <div class="text-center mb-5">
-     <h2 class="section-title">
-      Meet Our Mentors
-     </h2>
-     <p class="text-muted small">
-      Guiding you with real-world experience and AI leadership.
-     </p>
+    <!-- Seminars Tab -->
+    <div class="tab-pane fade" id="seminars">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card-glass">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="Cloud Seminar">
+            <div class="p-4">
+              <h5 class="fw-bold text-dark">Cloud Security Seminar</h5>
+              <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 18, 2025</p>
+              <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>11:00 AM – 1:00 PM</p>
+              <p class="text-dark small">Insights on cloud architecture and cybersecurity.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Reserve Seat</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="container">
-    <!-- Row First -->
-    <div class="row g-4">
-     <!-- Mentor Card -->
-     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-      <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card">
-       <img alt="Mentor 1" class="rounded-circle mb-3 mx-auto shadow-sm" height="130" src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" width="130"/>
-       <h5 class="fw-bold text-dark-blue mb-1">
-        Alex Johnson
-       </h5>
-       <p class="text-muted small mb-2">
-        Senior AI Researcher
-       </p>
-       <p class="small text-muted">
-        10+ years in deep learning, NLP, and enterprise AI systems.
-       </p>
-       <a class="btn btn-primary small mt-2 px-4" href="#">
-        View Profile
-       </a>
+
+    <!-- Webinars Tab -->
+    <div class="tab-pane fade" id="webinars">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card-glass">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="Data Science Webinar">
+            <div class="p-4">
+              <h5 class="fw-bold text-dark">Intro to Data Science</h5>
+              <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 14, 2025</p>
+              <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>5:00 PM – 6:00 PM</p>
+              <p class="text-dark small">An engaging webinar for beginners in data.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Join</a>
+            </div>
+          </div>
+        </div>
       </div>
-     </div>
-     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-      <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card">
-       <img alt="Mentor 2" class="rounded-circle mb-3 mx-auto shadow-sm" height="130" src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" width="130"/>
-       <h5 class="fw-bold text-dark-blue mb-1">
-        Samantha Ray
-       </h5>
-       <p class="text-muted small mb-2">
-        Data Science Leader
-       </p>
-       <p class="small text-muted">
-        Expert in analytics, predictive modeling, and data strategy.
-       </p>
-       <a class="btn btn-primary small mt-2 px-4" href="#">
-        View Profile
-       </a>
-      </div>
-     </div>
-     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-      <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card">
-       <img alt="Mentor 3" class="rounded-circle mb-3 mx-auto shadow-sm" height="130" src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" width="130"/>
-       <h5 class="fw-bold text-dark-blue mb-1">
-        Rahul Verma
-       </h5>
-       <p class="text-muted small mb-2">
-        Cloud AI Architect
-       </p>
-       <p class="small text-muted">
-        Designs scalable ML pipelines using AWS, GCP and MLOps.
-       </p>
-       <a class="btn btn-primary small mt-2 px-4" href="#">
-        View Profile
-       </a>
-      </div>
-     </div>
     </div>
-    <!-- Row Second -->
- 
-    <!-- View More Button -->
-    <div class="text-center mt-5">
-     <a class="btn btn-primary px-5 py-2" href="#">
-      View More Mentors
-     </a>
+
+    <!-- Meetings Tab -->
+    <div class="tab-pane fade" id="meetings">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card-glass">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid" alt="Startup Meetup">
+            <div class="p-4">
+              <h5 class="fw-bold text-dark">Startup Leaders Meetup</h5>
+              <p class="text-muted small mb-2"><i class="fas fa-calendar-alt me-2"></i>June 22, 2025</p>
+              <p class="text-muted small mb-3"><i class="fas fa-clock me-2"></i>6:00 PM – 8:00 PM</p>
+              <p class="text-dark small">Network with VCs, founders & innovators.</p>
+              <a href="#" class="btn btn-primary btn-sm mt-2">Attend</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR SPEAKERS SECTION (Mentors, with aos in cards only) -->
+<section class="py-5 bg-pastel-blue">
+ <div class="container">
+  <div class="text-center mb-5">
+   <h2 class="section-title">Meet Our Mentors</h2>
+   <p class="text-muted small">Guiding you with real-world experience and AI leadership.</p>
+  </div>
+ </div>
+ <div class="container">
+  <div class="row g-4">
+   <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card">
+     <img alt="Mentor 1" class="rounded-circle mb-3 mx-auto shadow-sm" height="130" src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" width="130"/>
+     <h5 class="fw-bold text-dark-blue mb-1">Alex Johnson</h5>
+     <p class="text-muted small mb-2">Senior AI Researcher</p>
+     <p class="small text-muted">10+ years in deep learning, NLP, and enterprise AI systems.</p>
+     <a class="btn btn-primary small mt-2 px-4" href="#">View Profile</a>
     </div>
    </div>
-  </section>
+   <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card">
+     <img alt="Mentor 2" class="rounded-circle mb-3 mx-auto shadow-sm" height="130" src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" width="130"/>
+     <h5 class="fw-bold text-dark-blue mb-1">Samantha Ray</h5>
+     <p class="text-muted small mb-2">Data Science Leader</p>
+     <p class="small text-muted">Expert in analytics, predictive modeling, and data strategy.</p>
+     <a class="btn btn-primary small mt-2 px-4" href="#">View Profile</a>
+    </div>
+   </div>
+   <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card">
+     <img alt="Mentor 3" class="rounded-circle mb-3 mx-auto shadow-sm" height="130" src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" width="130"/>
+     <h5 class="fw-bold text-dark-blue mb-1">Rahul Verma</h5>
+     <p class="text-muted small mb-2">Cloud AI Architect</p>
+     <p class="small text-muted">Designs scalable ML pipelines using AWS, GCP and MLOps.</p>
+     <a class="btn btn-primary small mt-2 px-4" href="#">View Profile</a>
+    </div>
+   </div>
+  </div>
+  <!-- View More Button (no aos needed) -->
+  <div class="text-center mt-5">
+   <a class="btn btn-primary px-5 py-2" href="#">View More Mentors</a>
+  </div>
+ </div>
+</section>
   
-<!-- GALLERY SECTION -->
+<!-- GALLERY SECTION (add aos to image grid items) -->
 <section id="gallery" class="py-5 bg-light">
   <div class="container">
     <div class="text-center mb-5">
@@ -422,19 +387,18 @@
       </p>
     </div>
     <div class="row g-3">
-      <div class="col-6 col-md-4 col-lg-3">
-        <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 1">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 1">
       </div>
-      <div class="col-6 col-md-4 col-lg-3">
-        <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 2">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 2">
       </div>
-      <div class="col-6 col-md-4 col-lg-3">
-        <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 3">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 3">
       </div>
-      <div class="col-6 col-md-4 col-lg-3">
-        <img src="	https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 4">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=800&q=80" class="img-fluid rounded" alt="Gallery Image 4">
       </div>
-      <!-- Add more blocks if needed -->
     </div>
   </div>
 </section>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   GIofAI – Global Institute of Artificial Intelligence
+  </title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <!-- Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  </link>
+<link rel="stylesheet" href="/Css/style.css" />
+ </head>
+ <body>
+  <header class="navbar-custom fixed-top bg-white shadow-sm">
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+     <!-- Logo Left -->
+     <a class="navbar-brand" href="#">
+      <img alt="GIofAI Logo" src="giofaiIcon.webp"/>
+     </a>
+     <!-- Mobile Toggler -->
+     <button class="navbar-toggler btn-primary" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <!-- Centered Menu -->
+     <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav mx-auto gap-lg-4 gap-3 text-center">
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">
+         About
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="programsDropdown" role="button">
+         Programs &amp; Events
+        </a>
+        <ul aria-labelledby="programsDropdown" class="dropdown-menu bg-dark-blue text-pastel-yellow">
+         <!-- Programs -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Programs
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Career Starter Training
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data Engineering CST
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Engineering CST
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Career Transition Mentorship
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data Engineering CMT
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Engineering CMT
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <!-- Leadership Development -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Leadership Development
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li>
+            <a class="dropdown-item" href="#">
+             AI Leadership and Strategy Program
+            </a>
+           </li>
+          </ul>
+         </li>
+         <!-- Workshop & Masterclass -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Workshop &amp; Masterclass
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+             Agentic AI Masterclass
+            </a>
+            <ul class="dropdown-menu bg-dark-blue">
+             <li>
+              <a class="dropdown-item" href="#">
+               Data and AI Hackathon
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="#">
+               AI Strategy &amp; Readiness
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <!-- Corporate -->
+         <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+           Corporate
+          </a>
+          <ul class="dropdown-menu bg-dark-blue">
+           <li>
+            <a class="dropdown-item" href="#">
+             Corporate Training Services
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+         Team
+        </a>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#">
+         Community
+        </a>
+        <ul class="dropdown-menu bg-dark-blue text-pastel-yellow">
+         <li>
+          <a class="dropdown-item" href="#">
+           News
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item" href="#">
+           Group
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+         Contact
+        </a>
+       </li>
+      </ul>
+      <!-- Mobile Only Auth Buttons (no bullet, centered, styled as buttons) -->
+      <ul class="navbar-nav list-unstyled d-lg-none w-100 text-center my-2">
+       <li class="nav-item mb-2">
+        <a class="btn btn-primary btn-sm w-75" href="#">
+         Sign In
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="btn btn-primary btn-sm w-75" href="#">
+         Sign Up
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Right Side Buttons on Desktop -->
+     <div class="d-none d-lg-flex ms-auto gap-2">
+      <a class="btn btn-primary btn-sm px-3" href="#">
+       Sign In
+      </a>
+      <a class="btn btn-primary btn-sm px-3" href="#">
+       Sign Up
+      </a>
+      <!-- User Icon dropdown (only shown after login) -->
+      <ul class="navbar-nav d-none" id="userMenu">
+       <li class="nav-item dropdown">
+        <a class="nav-link text-warning" data-bs-toggle="dropdown" href="#">
+         <i class="fa-solid fa-user fs-5">
+         </i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark-blue border-0">
+         <li>
+          <a class="dropdown-item text-warning" href="#">
+           Dashboard
+          </a>
+         </li>
+         <li>
+          <a class="dropdown-item text-warning" href="#">
+           Logout
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <!-- Header End -->  
+<section class="position-relative bg-light py-0">
+  <div class="container-fluid px-0">
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/4.webp" class="d-block w-100" alt="Hero Slide 1">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+          
+            <a href="#popup" class="btn btn-outline-light small px-4 py-2 openPopup">Register Now</a>
+          </div>
+        </div>
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/2.webp" class="d-block w-100" alt="Hero Slide 2">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+            <a href="#popup" class="btn btn-outline-light small px-4 py-2 openPopup">Register Now</a>
+          </div>
+        </div>
+         <div class="carousel-item">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/3.webp" class="d-block w-100" alt="Hero Slide 3">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
+            
+            <a href="#popup" class="btn btn-outline-light small px-4 py-2 openPopup">Register Now</a>
+          </div>
+        </div> 
+        <div class="carousel-item">
+          <img src="https://giofai.com.au/resource/uploads/2025/01/WEEBSITE_BANNER.jpg" class="d-block w-100" alt="Hero Slide 4">
+         
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!-- Dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="3" aria-label="Slide 2"></button>
+ <!-- More dots if you add more slides -->
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section class="py-5 bg-pastel-blue">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-down">
+        <h2 class="section-title mb-2">GIofAI Pathfinder</h2>
+        <p class="text-muted mb-0">Career Accelerator and Hackathon</p>
+      </div>
+      <div class="row g-4">
+        <!-- Workshop -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="border rounded-3 shadow-sm h-100 p-4 d-flex flex-column align-items-center bg-white">
+            <h5 class="mb-2 fw-bold">Agentic AI Workshop</h5>
+            <p class="mb-1">Free Workshop - Build Your First AI Agent in 60 Minutes</p>
+            <span class="badge bg-danger mb-3">Full</span>
+            <a class="btn btn-sm w-100 disabled" tabindex="-1" aria-disabled="true">Register Yourself<br>(Limited to 40 Seats)</a>
+          </div>
+        </div>
+        <!-- Hackathon + Career Guidance -->
+        <div class="col-lg-8 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="border rounded-3 shadow-sm h-100 p-4 bg-white">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-md-6">
+                <div>
+                  <h6 class="text-uppercase fw-bold mb-2">Session 1</h6>
+                  <h5 class="fw-bold mb-1">Hackathon</h5>
+                  <p class=" text-muted">Solve real-world challenges and showcase your AI skills.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <h6 class="text-uppercase fw-bold mb-2">Session 2</h6>
+                  <h5 class="fw-bold mb-1">AI & Data Career Guidance Workshop</h5>
+                  <p class="text-muted">Discover opportunities in AI and data-driven careers.</p>
+                </div>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <button class="btn btn-primary btn-sm px-4 fw-bold openPopup">Register &amp; Pay (INR 11090)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Meet Our Mentors</h2>
+      <p class="text-muted small">
+        Guiding you with real-world experience and AI leadership.
+      </p>
+    </div>
+    <div class="row g-3 justify-content-center">
+      <!-- Mentor 1 -->
+      <div class="col-lg-2 col-md-2 col-6" data-aos="fade-up">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card position-relative">
+          <span class="position-absolute top-0 end-0 m-2">
+            <i class="fa fa-info-circle text-dark-blue mentor-popover"
+               tabindex="0"
+               data-bs-toggle="popover"
+               data-bs-trigger="focus"
+               data-bs-placement="left"
+               data-bs-html="true"
+               data-bs-content="
+                Rina Gami is a dynamic leader in the recruitment and talent acquisition space, with over 16 years of experience supporting organizations in building high-performance teams that drive data-driven decision-making. As the Co-owner of Konnexus, Rina specializes in connecting Australia’s leading businesses with top talent in Data Analytics, Business Intelligence, and Project Services, providing tailored recruitment solutions for permanent, contract, and statement-of-work (SOW) roles.<br><br>
+                Known for her strategic approach, Rina has been instrumental in helping organizations hire from the top 20% of talent in the market, leveraging innovative technology platforms and accessing passive and dormant talent pools. She is the host of the 'Lead with Data' podcast and a passionate advocate for fostering community and collaboration through the Konnect with Data initiative, which brings data professionals together to share insights and elevate their expertise.<br><br>
+                Rina’s expertise spans recruiting for roles such as Chief Data Officers, Data Scientists, AI Specialists, and Business Intelligence Managers. Her efforts have helped numerous businesses achieve cost optimization, efficiency improvements, and successful business outcomes by building teams with the right capability and cultural fit.<br><br>
+                At the GIofAI Pathfinder Event, Rina will share her invaluable insights on recruitment trends, AI workforce development, and the future of talent in the tech industry. Her vision and leadership inspire organizations and individuals to thrive in the rapidly evolving world of AI and data.<br>
+                <b>Don’t miss this opportunity to hear from Rina Gami and gain actionable strategies to build your career or team in the field of AI and data!</b>
+               "></i>
+          </span>
+          <img alt="Mentor 1" class="rounded-circle mb-3 mx-auto shadow-sm" height="110" width="110" src="https://giofai.com.au/resource/uploads/2025/01/Rina%20Gami.png"/>
+          <h5 class="fw-bold text-dark-blue mb-1">Rina Gami</h5>
+          <div class="text-muted small">Co-Owner, Konnexus</div>
+        </div>
+      </div>
+      <!-- Mentor 2 -->
+      <div class="col-lg-2 col-md-2 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card position-relative">
+          <span class="position-absolute top-0 end-0 m-2">
+            <i class="fa fa-info-circle text-dark-blue mentor-popover"
+               tabindex="0"
+               data-bs-toggle="popover"
+               data-bs-trigger="focus"
+               data-bs-placement="left"
+               data-bs-html="true"
+               data-bs-content="
+Xi Liang is a dynamic leader in the field of data and AI, currently serving as the Head of Data and AI Product at Judo Bank. With a track record of delivering innovative AI solutions that tackle real-world challenges, Xi has established herself as a key driver of digital transformation and data-driven innovation.<br><br>
+At Judo Bank, Xi has spearheaded initiatives that include implementing a comprehensive data and AI strategy, launching enterprise-scale products like a credit risk engine projected to generate over $10 million in revenue, and establishing an AI platform to improve productivity by 10%. She also excels in data governance, having enhanced systems to boost data accuracy and compliance, and has led high-impact engagements with executive leaders to shape strategic decisions.
+Prior to her role at Judo Bank, Xi held leadership positions at Endeavour Group and McKinsey &amp; Company, where she built and managed large teams, unified analytics and AI efforts, and delivered multi-million-dollar AI products globally. She has also contributed significantly to cost optimization and operational efficiency in these roles, consistently demonstrating her ability to align AI strategies with business goals to drive measurable impact.<br><br>
+Xi’s early career includes groundbreaking work at IBM, where she led a global research team to develop an innovative breast cancer diagnosis solution integrated into IBM Watson Health, showcasing her commitment to using AI for social good.
+At the GIofAI Pathfinder Event, Xi will bring her wealth of experience and visionary insights to the panel discussion, shedding light on how data and AI can revolutionize industries and empower professionals to thrive in this evolving landscape. Don’t miss the chance to learn from her expertise and be inspired by her journey."></i>
+          </span>
+          <img alt="Mentor 2" class="rounded-circle mb-3 mx-auto shadow-sm" height="110" width="110" src="https://giofai.com.au/resource/uploads/2025/01/Xi%20Liang.png"/>
+          <h5 class="fw-bold text-dark-blue mb-1">Xi Liang
+</h5>
+          <div class="text-muted small">Head of Data and AI Product, Judo Bank
+
+</div>
+        </div>
+      </div>
+      <!-- Mentor 3 -->
+      <div class="col-lg-2 col-md-2 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card position-relative">
+          <span class="position-absolute top-0 end-0 m-2">
+            <i class="fa fa-info-circle text-dark-blue mentor-popover"
+               tabindex="0"
+               data-bs-toggle="popover"
+               data-bs-trigger="focus"
+               data-bs-placement="left"
+               data-bs-html="true"
+               data-bs-content="
+Rita Arrigo serves as the Strategic Engagement Manager at the National AI Centre, where she spearheads the AI industry growth strategy to foster collaboration and engagement across Australia's AI landscape. Her mission is to elevate the country’s global AI adoption and nurture a responsible and sustainable AI industry.
+            With extensive expertise in digital transformation and AI strategy, Rita has delivered thought leadership on key topics including Generative AI, AI in Cyber Security, and AI for Climate Tech. She has been instrumental in launching the AI Industry Connection Forum, a platform designed to connect companies exploring emerging AI technologies with cutting-edge research and industry leaders.
+           <br><br> A renowned digital and AI strategist, Rita is a catalyst for innovation, leveraging emerging technologies such as Artificial Intelligence (AI), Generative AI, Machine Learning (ML), and Mixed Reality (MR). Previously, as Chief Digital Advisor at Microsoft, she was appointed an AI Ambassador, where she passionately advocated for using AI and XR technologies to build better futures for work and communities.
+            At the GIofAI Pathfinder Event, Rita will join us as the Chief Guest, sharing her visionary insights on AI’s transformative potential and presenting awards to the hackathon winners.<br><br> Her leadership and dedication to fostering innovation and collaboration continue to inspire countless organizations and individuals in shaping a brighter, AI-driven future.
+            Don’t miss the opportunity to hear from Rita Arrigo and gain valuable perspectives on how AI can transform industries and communities alike."></i>
+          </span>
+          <img alt="Mentor 3" class="rounded-circle mb-3 mx-auto shadow-sm" height="110" width="110" src="https://giofai.com.au/resource/uploads/2025/01/Rita%20Arrigo.png"/>
+          <h5 class="fw-bold text-dark-blue mb-1">Rita Arrigo
+</h5>
+          <div class="text-muted small">Engagement Manager, National AI Centre
+
+</div>
+        </div>
+      </div>
+      <!-- Mentor 4 -->
+      <div class="col-lg-2 col-md-2 col-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card position-relative">
+          <span class="position-absolute top-0 end-0 m-2">
+            <i class="fa fa-info-circle text-dark-blue mentor-popover"
+               tabindex="0"
+               data-bs-toggle="popover"
+               data-bs-trigger="focus"
+               data-bs-placement="left"
+               data-bs-html="true"
+               data-bs-content="
+Sandeep Bhalekar stands as a formidable leader in the world of AI and Data, serving as the CEO and Chairman of the Global Institute of Artificial Intelligence (GIofAI). With over two decades of executive experience and a prestigious standing as one of Australia’s top 10 AI leaders,<br><br> Sandeep is not only the driving force behind GIofAI but also a widely respected authority in the fields of FinTech, AI, and Data Privacy. His vision and leadership have propelled GIofAI to global prominence, establishing it as an elite institution dedicated to advancing AI innovation and nurturing future AI leaders.Sandeep’s influence extends far beyond corporate strategy. Known as a powerful advocate for social impact, he has committed his expertise to humanitarian initiatives, ensuring that GIofAI's programs reach underrepresented communities, support Indigenous Australians, and create pathways for women re-entering the workforce. <br><br>His focus on democratizing AI reflects a deeper mission: to make cutting-edge AI education accessible to all, bridging gaps and empowering individuals worldwide.Sandeep’s educational background includes a Master’s in AI &amp; ML from LJMU, UK, a Postgraduate Program in AI &amp; ML from IIIT Bangalore, and a Bachelor’s in Electrical Engineering from NIT Allahabad. This technical mastery, combined with his strategic vision, guides GIofAI’s direction and operations. His background in executive roles at major organizations has honed his skills in orchestrating complex, large-scale initiatives, making him a recognized authority and mentor for both emerging and established AI professionals.A relentless innovator, Sandeep’s leadership at GIofAI includes creating transformational mentorship programs, premium corporate training, and educational experiences designed for industry impact. His global network, powerful influence, and unwavering dedication have cemented his reputation as a powerhouse in AI and a humanitarian champion, setting a new standard for leadership in technology and beyond."></i>
+          </span>
+          <img alt="Mentor 4" class="rounded-circle mb-3 mx-auto shadow-sm" height="110" width="110" src="https://giofai.com.au/resource/uploads/2025/01/sandeep%20bhalaker.png"/>
+          <h5 class="fw-bold text-dark-blue mb-1">Sandeep Bhalekar
+</h5>
+          <div class="text-muted small">CEO & Chairman GIofAI
+
+</div>
+        </div>
+      </div>
+      <!-- Mentor 5 -->
+      <div class="col-lg-2 col-md-2 col-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4 bg-white mentor-card position-relative">
+          <span class="position-absolute top-0 end-0 m-2">
+            <i class="fa fa-info-circle text-dark-blue mentor-popover"
+               tabindex="0"
+               data-bs-toggle="popover"
+               data-bs-trigger="focus"
+               data-bs-placement="left"
+               data-bs-html="true"
+               data-bs-content="
+Su Jella helps to drive data and AI revolutions and opportunities. A visionary in Data, Analytics, and AI, Su doesn't merely confront the question, What do we do with all this data? Instead, she transforms this challenge into an enlightening journey of discovery, deriving actionable insights that fuel smarter business decisions. Her strategic vision and leadership have been a catalyst for transformative growth in top-tier organisations, revolutionising their decision-making processes, operational efficiencies, and growth trajectories.With a rich career spanning over 15 years in pivotal Data, Analytics and AI roles, Su expertise is anchored in a groundbreaking approach. She uniquely integrates her leadership with a human-centric perspective blended with data-driven strategies and a deep technical acumen. This fusion has led to groundbreaking outcomes:&nbsp;<br><br>- enhanced decision-making enriched by empathy and data insight<br><br>- operational efficiencies that blend technical prowess with human understanding&nbsp;<br><br>- transformative organisational growth rooted in deep insights into customer and team dynamics.<br><br>A believer in data as a transformative business tool, Su's guides organisations to demystify and harness the power of their data. Her collaborative work with boards and C-suite executives aligns data strategies with overarching business goals, paving the way for impactful, ethical decision-making.Su's influence extends far beyond data. She is a passionate advocate for community building, a champion for women in leadership and STEM, a mentor and avid contributor to podcasts and writing about Leadership, Data and AI. Through her expansive network, Su shares cutting-edge insights on data and AI governance, data strategy, and ethical leadership, inspiring a new generation of leaders who balance data proficiency with a deep respect for human-centric values.Su was recently awarded a Winner of Women in AI in Asia Pacific and also recognised as Australia's Top 25 Analytics Leaders."></i>
+          </span>
+          <img alt="Mentor 5" class="rounded-circle mb-3 mx-auto shadow-sm" height="110" width="110" src="https://giofai.com.au/resource/uploads/2025/01/Susmitah%20Jella.png"/>
+          <h5 class="fw-bold text-dark-blue mb-1">Susmitah Jella
+</h5>
+          <div class="text-muted small">Data Expert
+
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('.mentor-popover'))
+    popoverTriggerList.forEach(function (popoverTriggerEl) {
+      new bootstrap.Popover(popoverTriggerEl)
+    })
+  });
+</script>
+
+  <section class="py-5 bg-pastel-blue roadmap-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-4" data-aos="fade-down">Detailed Schedule & Event Content</h2>
+      <h5 class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">Time: 9:00 AM to 5:00 PM</h5>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-center">
+            Join us for an action-packed day designed to equip aspiring Data & AI professionals with hands-on skills, practical insights, and career guidance. This EXCLUSIVE event is perfect for beginners, career switchers, and anyone eager to start or advance their journey in Data and AI.
+          </p>
+        </div>
+      </div>
+      <!-- Step 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-1" data-aos="fade-up">
+          <div class="card-style p-4 shadow-sm h-100 rounded bg-white">
+            <h5 class="text-dark-blue mb-3">9:00 AM - 10:00 AM: Registration & Welcome</h5>
+            <ul class="mb-0 text-muted">
+              <li>Arrive early to check in, grab your event kit, and connect with peers and mentors.</li>
+              <li>Light refreshments available.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2 text-center" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/Registration-Networking (1).webp" class="img-fluid rounded shadow" alt="Registration Networking">
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2" data-aos="fade-up">
+          <div class="card-style p-4 shadow-sm h-100 rounded bg-white">
+            <h5 class="text-dark-blue mb-3">10:00 AM - 11:45 AM: Free Workshop - Build Your First AI Agent in 60 Minutes</h5>
+            <ul class="mb-0 text-muted">
+              <li>Learn the basics of AI Agents and their practical applications.</li>
+              <li>Build a functional AI agent using ChatGPT APIs or LangChain.</li>
+              <li>Create tasks like automated responses, text summarization, or simple query handling—no coding experience required.</li>
+            </ul>
+            <div class="mt-2">
+              <b>Takeaways:</b>
+              <ul class="mb-0 text-muted">
+                <li>Working AI Agent by the end of the session.</li>
+                <li>Free AI Starter Toolkit (templates, tools, and resources).</li>
+                <li>Practical AI experience to kickstart your career.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1 text-center" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/Build-Your-First-AI-Agent-in-60-Minutes (1).webp" class="img-fluid rounded shadow" alt="Workshop">
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-1" data-aos="fade-up">
+          <div class="card-style p-4 shadow-sm h-100 rounded bg-white">
+            <h5 class="text-dark-blue mb-3">12:00 PM - 12:30 PM: Lunch Break</h5>
+            <ul class="mb-0 text-muted">
+              <li>Visit the GIofAI Booth for insights on programs, career opportunities, and exclusive offers.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2 text-center" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/Lunch-Break.webp" class="img-fluid rounded shadow" alt="Lunch Break">
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2" data-aos="fade-up">
+          <div class="card-style p-4 shadow-sm h-100 rounded bg-white">
+            <h5 class="text-dark-blue mb-3">12:30 PM - 2:30 PM: Hackathon - AI in Action: Solve Real-World Challenges</h5>
+            <p class="mb-2 text-muted">Work in teams to solve real-world AI and Data challenges while showcasing creativity, collaboration, and problem-solving skills.</p>
+            <b>Structure:</b>
+            <ul class="mb-2 text-muted">
+              <li><b>12:30 - 1:00 PM:</b> Problem statement.</li>
+              <li><b>1:00 - 2:15 PM:</b> Problem-solving with guidance from mentors.</li>
+              <li><b>2:15 - 2:30 PM:</b> Presentations and feedback.</li>
+            </ul>
+            <b>Prizes & Recognition:</b>
+            <ul class="mb-2 text-muted">
+              <li>Winner: <b>Brand New iPad</b></li>
+              <li>Top 5: Featured in the GIofAI Community spotlight, recruiter visibility, and 30% discount on any GIofAI programs (enrol on the same day).</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1 text-center" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/Hackathon.webp" class="img-fluid rounded shadow" alt="Hackathon">
+        </div>
+      </div>
+      <!-- Step 5 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-1" data-aos="fade-up">
+          <div class="card-style p-4 shadow-sm h-100 rounded bg-white">
+            <h5 class="text-dark-blue mb-3">3:00 PM - 4:30 PM: Career Guidance Session - Building a Career in Data & AI</h5>
+            <ul class="mb-0 text-muted">
+              <li><b>AI Job Market Insights:</b> Learn about in-demand skills, roles, and salary expectations.</li>
+              <li><b>Career Roadmap:</b> Steps to transition into Data Engineering, AI Engineering, or Data Science.</li>
+              <li><b>Structured Learning Pathways:</b> Discover how GIofAI’s Mentorship Programs and Career Starter Programs can fast-track your success.</li>
+              <li><b>Interactive Q&A:</b> Get personalised answers from mentors and industry experts.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2 text-center" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/Career-Guidance-Session.webp" class="img-fluid rounded shadow" alt="Career Guidance">
+        </div>
+      </div>
+      <!-- Step 6 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2" data-aos="fade-up">
+          <div class="card-style p-4 shadow-sm h-100 rounded bg-white">
+            <h5 class="text-dark-blue mb-3">4:30 PM - 5:00 PM: Prizes & Recognition Ceremony</h5>
+            <ul class="mb-0 text-muted">
+              <li>Winner receives a Brand New iPad.</li>
+              <li>Top 5 Participants featured in the GIofAI Community Spotlight for recruiter visibility.</li>
+              <li>Exclusive <b>20% Discount</b> on GIofAI's Mentorship and Career Starter Programs (event attendees only).</li>
+              <li>Free 1:1 career consultation slots for structured career growth.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1 text-center" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2024/12/Prizes--Recognition-Ceremony.webp" class="img-fluid rounded shadow" alt="Prizes Ceremony">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-section bg-dark-blue py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <div class="px-3 py-4 rounded-4 bg-white shadow-sm h-100 d-flex flex-column justify-content-center">
+            <h2 class="section-title-left mb-3 text-dark-blue">Event Details</h2>
+            <ul class="list-unstyled text-dark mb-2">
+              <li class="mb-1"><i class="fa fa-calendar-alt me-2 text-dark-blue"></i><b>Date:</b> Saturday 1 February 2025</li>
+              <li class="mb-1"><i class="fa fa-map-marker-alt me-2 text-dark-blue"></i><b>Location:</b> The Performance Space, Level 2, Library at The Dock</li>
+              <li class="mb-1"><i class="fa fa-map-pin me-2 text-dark-blue"></i>107 Victoria Harbour Promenade, Docklands VIC 3008</li>
+              <li class="mb-1"><i class="fa fa-phone-alt me-2 text-dark-blue"></i><b>Phone:</b> 1800 695 427</li>
+              <li class="mb-1"><i class="fa fa-clock me-2 text-dark-blue"></i><b>Time:</b> 9:00 AM to 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="ratio ratio-4x3 rounded-4 shadow-sm overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d315.06141179952985!2d144.9410084!3d-37.819634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!3e3!4m5!1s0x6ad65d674616d46f%3A0x5045675218cfdf0!2sDocklands%20VIC!3m2!1d-37.8190118!2d144.9465764!4m5!1s0x6ad65d5e69c3fae9%3A0x86668ab8c73f0701!2sLibrary%20at%20The%20Dock%2C%20107%20Victoria%20Harbour%20Promenade%2C%20Docklands%20VIC%203008!3m2!1d-37.8200291!2d144.9405902!5e0!3m2!1sen!2sau!4v1702546514375!5m2!1sen!2sau"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Maps - Library at The Dock"
+              class="w-100 border-0">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="py-5 bg-pastel-blue">
+    <div class="container">
+      <h2 class="section-title text-center mb-4" data-aos="fade-down">Official Certificates</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center bg-white p-3">
+            <h5 class="fw-bold text-dark-blue mb-3">Hackathon Winner Certificate</h5>
+            <img src="https://giofai.com.au/resource/uploads/2024/12/Hackathon-Winner-Certificate.jpg" class="img-fluid rounded-3 mb-2" alt="Hackathon Winner Certificate" data-aos="zoom-in">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center bg-white p-3">
+            <h5 class="fw-bold text-dark-blue mb-3">Hackathon Top 5 Certificate</h5>
+            <img src="https://giofai.com.au/resource/uploads/2024/12/Hackathon-Top5-Certifiate.jpg" class="img-fluid rounded-3 mb-2" alt="Hackathon Top 5 Certificate" data-aos="zoom-in">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center bg-white p-3">
+            <h5 class="fw-bold text-dark-blue mb-3">Pathfinder Participant Certificate</h5>
+            <img src="https://giofai.com.au/resource/uploads/2024/12/Pathfinder-Participant-Certificate.jpg" class="img-fluid rounded-3 mb-2" alt="Participant Certificate" data-aos="zoom-in">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center bg-white p-3">
+            <h5 class="fw-bold text-dark-blue mb-3">FREE Workshop Participation Certificate</h5>
+            <img src="https://giofai.com.au/resource/uploads/2024/12/FREE-Workshop-Participation-Certificate.jpg" class="img-fluid rounded-3 mb-2" alt="Workshop Certificate" data-aos="zoom-in">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sponsor" class="py-5 sponsor-section bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-4" data-aos="fade-down">Key Event Sponsors</h2>
+      <hr>
+      <div class="row align-items-center justify-content-center mb-4">
+        <div class="col-lg-3 col-md-4 col-12 text-center mb-3 mb-md-0" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2025/01/bhalaker-logo.png" alt="Bhalekar Consulting Logo" class="img-fluid sponsor-logo mb-3 rounded-3 shadow-sm" style="max-width:180px;">
+        </div>
+        <div class="col-lg-9 col-md-8 col-12" data-aos="fade-up">
+          <h4 class="fw-bold text-dark-blue mb-2">Bhalekar Consulting</h4>
+          <p class="mb-1 text-muted">At Bhalekar Consulting, we specialize in transforming businesses ...</p>
+          <a href="https://bhalekar.ai/" class="btn btn-primary btn_i mt-2" target="_blank">Read More</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-3 col-md-4 col-12 text-center mb-3 mb-md-0" data-aos="zoom-in">
+          <img src="https://giofai.com.au/resource/uploads/2025/01/Zone-IT-Black-Logo.png" alt="Zone IT Solutions Logo" class="img-fluid sponsor-logo mb-3 rounded-3 shadow-sm" style="max-width:180px;">
+        </div>
+        <div class="col-lg-9 col-md-8 col-12" data-aos="fade-up">
+          <h4 class="fw-bold text-dark-blue mb-2">Zone IT Solutions</h4>
+          <p class="mb-1 text-muted">They are an Australian-based recruitment company ...</p>
+          <a href="https://zoneitsolutions.com/" class="btn btn-primary btn_i mt-2" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partnerWithus position-relative d-flex align-items-center" style="min-height:200px;">
+    <img src="https://giofai.com.au/resource/uploads/2024/12/partner%20with%20us.png"
+         alt="Partner With Us Banner"
+         class="img-fluid w-100"
+         style="object-fit:cover; min-height:200px; max-height:260px;" data-aos="zoom-in">
+    <div class="container position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-end" data-aos="fade-left">
+      <a href="https://forms.giofai.com.au/giofai/form/SponsorshipInterestForm/formperma/cl6LjiT2MWKR3DRxW0jVKmC8_en-H4RVYh02FtgvmyA"
+         class="btn btn-outline-light"
+         target="_blank">
+        PARTNER WITH US
+      </a>
+    </div>
+  </section>
+
+<section class="faq-section py-5 bg-light" id="FAQ">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title mb-3">Frequently Asked Questions</h2>
+      <p class="text-muted small">Find answers to common queries about the event.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                What is the GIofAI Pathfinder - Data & AI Career Accelerator Summit?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The GIofAI Pathfinder Summit is a full-day event for aspiring Data & AI professionals—offering hands-on workshops, a hackathon, and expert career guidance to help you launch or advance your career in AI.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                When and where is the event happening?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <b>Date:</b> Saturday, 1 February 2025<br>
+                <b>Time:</b> 9:00 AM to 5:00 PM<br>
+                <b>Venue:</b> The Performance Space, Level 2, Library at The Dock, Docklands VIC 3008<br>
+                <b>Phone:</b> 1800 695 427
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                Is the event free to attend?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Admission to the Community Room (networking and sponsor booths) and the morning workshop is free. Hackathon and career guidance sessions require prior registration.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                Do I need prior experience to participate?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                No prior experience needed! Both the workshop and hackathon are beginner-friendly and mentors will be available to help.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                What are the hackathon prizes?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                <b>Winner:</b> Brand new iPad<br>
+                <b>Top 5:</b> Featured in the GIofAI Community Spotlight, visibility to recruiters and hiring managers, and exclusive discounts on GIofAI programs.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq6-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                How do I register?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Register at <a href="https://www.giofai.com.au/workshop-and-master-class/data-and-ai-hackathon" target="_blank">this link</a>. Seats are limited—register early!
+              </div>
+            </div>
+          </div>
+          <!-- More FAQs as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <!-- Footer Start -->
+  <footer class="bg-dark-blue text-white pt-5 position-relative">
+   <div class="container position-relative z-2">
+    <div class="row text-center text-md-start g-4">
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Need Help?
+      </h6>
+      <p class="small text-muted">
+       Contact us for any queries you have about GIofAI membership, trainings and mentorship programs.
+      </p>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Call GIofAI
+      </h6>
+      <p class="mb-1 small text-muted fw-semibold">
+       National Office
+      </p>
+      <p class="mb-2 small text-muted fw-semibold">
+       Phone: 1800 434 008
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       Contact
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Find An Answer
+      </h6>
+      <p class="mb-1 small text-muted">
+       Have a question?
+       <br/>
+       We can help.
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       View FAQ
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+     <div class="col-md-6 col-lg-3">
+      <h6 class="fw-bold mb-2">
+       Give Us Feedback
+      </h6>
+      <p class="mb-2 small text-muted">
+       We would love to know your thoughts.
+      </p>
+      <a class="text-white small text-decoration-none" href="#">
+       Provide feedback
+       <i class="fa-solid fa-arrow-right ms-1">
+       </i>
+      </a>
+     </div>
+    </div>
+    <hr class="border-light my-4"/>
+    <div class="row align-items-center small">
+     <div class="col-md-6 d-flex flex-wrap gap-3 justify-content-center justify-content-md-start mb-3 mb-md-0">
+      <a class="text-white text-decoration-none" href="#">
+       Terms of Service
+      </a>
+      <a class="text-white text-decoration-none" href="#">
+       Privacy Policy
+      </a>
+      <a class="text-white text-decoration-none" href="#">
+       FAQ
+      </a>
+     </div>
+     <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-facebook">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-instagram">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-linkedin">
+       </i>
+      </a>
+      <a class="text-white" href="#">
+       <i class="fa-brands fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="text-center text-muted small mt-3">
+     All Rights Reserved © 2024 - GIofAI
+    </div>
+   </div>
+   <!-- Watermark -->
+   <div class="footer-watermark">
+    GIOFAI
+   </div>
+  </footer>
+  <!-- Footer End -->
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="/JS/scripts.js"></script>
+
+ </body>
+</html>
