@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <!-- Your Main Style -->
   <link href="/Css/style.css" rel="stylesheet"/>
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
 </head>
 <body>
       <header class="navbar-custom fixed-top bg-white shadow-sm">
@@ -216,88 +218,56 @@
   </header>
   <!-- Header End -->
  <!-- Hero / Intro Section -->
-  <section class="py-5 bg-dark-blue">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <div class="section-title-left text-white mb-4">
-AI Engineering : Career Transition Mentorship Program          </div>
-          <p class="text-white" style="line-height:2;">
-AI Engineering is a rapidly evolving field focused on designing and deploying intelligent systems using machine learning, AI, and data science. AI Engineers create scalable solutions that drive innovation and transform business processes, enabling organizations to make data-driven decisions and gain competitive advantages.
-<br><br>
-This program is ideal for both seasoned professionals and newcomers, offering comprehensive training on building AI models, optimizing machine learning algorithms, and applying AI solutions to real-world challenges.
-
-With expert mentorship and hands-on projects, you’ll gain the skills needed to excel in this cutting-edge field and succeed in an AI-driven future.          </p>
+<!-- Hero / Intro Section -->
+<section class="py-5 bg-dark-blue">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="section-title-left text-white mb-4">
+          AI Engineering : Career Transition Mentorship Program
         </div>
-        <div class="col-lg-6">
-          <div class="rounded-4 overflow-hidden shadow">
-            <iframe
-              style="min-height: 550px; width: 100%; border: none;"
-              src="https://forms.zohopublic.com.au/giofai/form/DataEngineeringCSTBrochure/formperma/8xXwI1i3JdVIWZKquL2nyc2JHhwOmKPMSih9zD0F1-w"
-              frameborder="0"
-              aria-label="Data Engineering CST Brochure"
-            ></iframe>
-          </div>
+        <p class="text-white" style="line-height:2;">
+          AI Engineering is a rapidly evolving field focused on designing and deploying intelligent systems using machine learning, AI, and data science. AI Engineers create scalable solutions that drive innovation and transform business processes, enabling organizations to make data-driven decisions and gain competitive advantages.
+          <br><br>
+          This program is ideal for both seasoned professionals and newcomers, offering comprehensive training on building AI models, optimizing machine learning algorithms, and applying AI solutions to real-world challenges.
+          <br><br>
+          With expert mentorship and hands-on projects, you’ll gain the skills needed to excel in this cutting-edge field and succeed in an AI-driven future.
+        </p>
+      </div>
+      <div class="col-lg-6" data-aos="zoom-in">
+        <div class="rounded-4 overflow-hidden shadow">
+          <iframe
+            style="min-height: 550px; width: 100%; border: none;"
+            src="https://forms.zohopublic.com.au/giofai/form/DataEngineeringCSTBrochure/formperma/8xXwI1i3JdVIWZKquL2nyc2JHhwOmKPMSih9zD0F1-w"
+            frameborder="0"
+            aria-label="Data Engineering CST Brochure"
+          ></iframe>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Hero -->
+  </div>
+</section>
+
+<!-- Overview Section -->
 <section class="py-5" id="Overview">
   <div class="container">
     <div class="row">
-      <!-- Left: Overview Text -->
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12" data-aos="fade-up">
         <div class="mb-4">
           <h2 class="section-title-left mb20">OVERVIEW</h2>
           <p>
-The AI Engineering Career Transition Mentorship Program is an intensive 12-week course designed to equip participants with comprehensive skills and knowledge in data engineering. Each week includes 6 hours of training sessions and 15 to 20 hours of self-learning through provided materials. This blend of guided instruction and independent study ensures a robust and flexible learning experience. Participants will undergo rigorous training and engage in hands-on projects covering a wide range of essential topics and tools, providing both theoretical knowledge and practical experience.
+            The AI Engineering Career Transition Mentorship Program is an intensive 12-week course designed to equip participants with comprehensive skills and knowledge in data engineering. Each week includes 6 hours of training sessions and 15 to 20 hours of self-learning through provided materials. This blend of guided instruction and independent study ensures a robust and flexible learning experience. Participants will undergo rigorous training and engage in hands-on projects covering a wide range of essential topics and tools, providing both theoretical knowledge and practical experience.
+          </p>
         </div>
       </div>
-      <!-- Right: Video Poster with Play Button -->
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="zoom-in">
         <div class="institute-video-container mb20">
-          <style>
-            .video-container {
-              position: relative;
-              width: 100%;
-              max-width: 800px;
-              margin: auto;
-              text-align: center;
-            }
-            .video-container img {
-              width: 100%;
-              cursor: pointer;
-              border-radius: 5px;
-            }
-            .video-container video {
-              width: 100%;
-              height: auto;
-              display: none;
-            }
-            .loading-overlay {
-              display: none;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              background: rgba(0, 0, 0, 0.8);
-              color: white;
-              padding: 15px;
-              border-radius: 5px;
-              font-size: 16px;
-              text-align: center;
-            }
-          </style>
           <div class="video-container">
-            <!-- Poster Image -->
             <img id="videoPoster" src="/resource/uploads/2025/02/Screenshot%202025-02-01%20at%207.25.26%E2%80%AFAM.png" alt="Video Poster">
-            <!-- Video Element -->
             <video id="videoPlayer" controls>
               <source src="" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <!-- Loading Overlay -->
             <div id="loadingOverlay" class="loading-overlay">Loading video...</div>
           </div>
           <script>
@@ -321,18 +291,15 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
     </div>
   </div>
 </section>
-  <!-- Highlights Section -->
+
+<!-- Highlights Section -->
 <section class="py-5 bg-pastel-blue">
   <div class="container">
     <div class="row g-4 justify-content-center">
-
-      <!-- LUCRATIVE CAREERS -->
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex" data-aos="fade-up">
         <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
-            <span class="icon-circle fs-2">
-              <i class="fa-solid fa-dollar-sign"></i>
-            </span>
+            <span class="icon-circle fs-2"><i class="fa-solid fa-dollar-sign"></i></span>
           </div>
           <h5 class="fw-bold text-dark-blue mb-2">LUCRATIVE CAREERS</h5>
           <p class="text-muted mb-0" style="min-height:80px;">
@@ -340,29 +307,21 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-
-  
-
-      <!-- CAREER STABILITY AND ADVANCEMENT -->
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
-            <span class="icon-circle fs-2">
-              <i class="fa-regular fa-file-lines"></i>
-            </span>
+            <span class="icon-circle fs-2"><i class="fa-regular fa-file-lines"></i></span>
           </div>
           <h5 class="fw-bold text-dark-blue mb-2">CAREER STABILITY<br>AND ADVANCEMENT</h5>
           <p class="text-muted mb-0" style="min-height:80px;">
             Transition into high-paying roles in tech giants and cutting-edge startups.
-          </p></div></div>
-                <div class="col-md-4 d-flex">
-
-                  <div class="card-style flex-fill p-4 h-100">
-
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
-            <span class="icon-circle fs-2">
-              <i class="fa-regular fa-file-lines"></i>
-            </span>
+            <span class="icon-circle fs-2"><i class="fa-regular fa-file-lines"></i></span>
           </div>
           <h5 class="fw-bold text-dark-blue mb-2">HIGH DEMAND</h5>
           <p class="text-muted mb-0">
@@ -370,8 +329,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-    <!-- TOP COMPANIES (CENTER, 2x width) -->
-      <div class="col-md-8 d-flex">
+      <div class="col-md-8 d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="card-style flex-fill p-4 h-100 d-flex flex-column align-items-center justify-content-center">
           <h5 class="fw-bold text-dark-blue text-center mb-3">Top companies hiring in this industry</h5>
           <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
@@ -382,21 +340,16 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
             <img src="fortescue.png" alt="Fortescue" style="height:36px;">
             <img src="coles.png" alt="Coles" style="height:36px;">
             <img src="verint.png" alt="Verint" style="height:36px;">
-            <!-- Add actual image paths or use text if images not available -->
           </div>
         </div>
       </div>
-
     </div>
     <!-- Second row for INDUSTRY GROWTH & SALARY EXPERT -->
     <div class="row g-4 justify-content-center mt-2">
-      <!-- INDUSTRY GROWTH -->
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="card-style flex-fill p-4 h-100">
           <div class="mb-3">
-            <span class="icon-circle fs-2">
-              <i class="fa-regular fa-file-lines"></i>
-            </span>
+            <span class="icon-circle fs-2"><i class="fa-regular fa-file-lines"></i></span>
           </div>
           <h5 class="fw-bold text-dark-blue mb-2">INDUSTRY GROWTH</h5>
           <p class="text-muted mb-0">
@@ -404,20 +357,16 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-      <!-- SALARY EXPERT (HANDSHAKE) -->
-      <div class="col-md-6 d-flex">
+      <div class="col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
         <div class="card-style flex-fill p-4 h-100 d-flex align-items-center">
-                    <div class="mb-3">
-
-          <span class="icon-circle fs-2">
-            <i class="fa-solid fa-handshake"></i>
-          </span>
-          <div>          </div>
-
-            <p class="mb-0 text-muted">
-              As per <a href="https://www.salaryexpert.com/" target="_blank" class="text-dark-blue">Salaryexpert.com</a>,
-              average salary for AI Engineers will be 186,646 by 2029
-            </p>
+          <div class="mb-3">
+            <span class="icon-circle fs-2"><i class="fa-solid fa-handshake"></i></span>
+            <div>
+              <p class="mb-0 text-muted">
+                As per <a href="https://www.salaryexpert.com/" target="_blank" class="text-dark-blue">Salaryexpert.com</a>,
+                average salary for AI Engineers will be 186,646 by 2029
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -425,18 +374,14 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
   </div>
 </section>
 
-  <!-- End Highlights -->
-
-
 <!-- Program Dates & Cohorts Section -->
 <section class="py-5 bg-white" id="Dates">
   <div class="container">
-    <div class="section-title text-dark-blue mb-4 text-center">
+    <div class="section-title text-dark-blue mb-4 text-center" data-aos="fade-down">
       Program Dates & Cohorts
     </div>
     <div class="row g-4 justify-content-center">
-      <!-- Cohort 1 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
         <div class="card-style p-4 h-100">
           <h6 class="fw-bold text-dark-blue mb-2">AI Engineering CTM - March Cohort</h6>
           <div class="text-muted small mb-2">
@@ -447,24 +392,23 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               Apply Now &rarr;
             </a>
             <div class="small text-muted ms-2">
-             The program’s enrollment application fee is set at A$299, non-refundable. Candidate enrollment is subject to approval by the relevant authorities.
+              The program’s enrollment application fee is set at A$299, non-refundable. Candidate enrollment is subject to approval by the relevant authorities.
             </div>
           </div>
         </div>
       </div>
-      <!-- Cohort 2 -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="card-style p-4 h-100">
           <h6 class="fw-bold text-dark-blue mb-2">AI Engineering CTM - June Cohort</h6>
           <div class="text-muted small mb-2">
-          5 June – 5 September 2025 <br> Melbourne, Australia, Remote (Online)
+            5 June – 5 September 2025 <br> Melbourne, Australia, Remote (Online)
           </div>
           <div class="d-flex align-items-center gap-3 mt-3">
             <a href="#" class="btn btn-primary px-4 py-2">
               Apply Now &rarr;
             </a>
             <div class="small text-muted ms-2">
-             The program’s enrollment application fee is set at A$299, non-refundable. Candidate enrollment is subject to approval by the relevant authorities.
+              The program’s enrollment application fee is set at A$299, non-refundable. Candidate enrollment is subject to approval by the relevant authorities.
             </div>
           </div>
         </div>
@@ -472,19 +416,18 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
     </div>
   </div>
 </section>
+
+<!-- Why GIofAI Section -->
 <section class="py-5 bg-pastel-blue" id="WhyGIofAI">
   <div class="container">
-    <!-- Title & Intro -->
-    <div class="text-center mb-4">
+    <div class="text-center mb-4" data-aos="fade-down">
       <h2 class="section-title mb-3">Why GIofAI</h2>
       <p class="mx-auto text-muted" style="max-width: 1100px; font-size: 1.08rem;">
         Global Institute of Artificial Intelligence strives to be the leading voice in AI innovation, bringing together thought leaders, experts, and professionals dedicated to harnessing the power of artificial intelligence for the greater good of society. We are committed to advancing cutting-edge research and providing world-class education that empowers individuals to not only master AI technologies but also understand their broader implications. Through our initiatives, we foster a vibrant community of leaders who are equipped to use AI responsibly, ensuring its ethical application in solving real-world challenges. By championing ethical AI practices, we aim to drive a positive, transformative impact across industries, communities, and the global landscape, promoting AI as a force for good in shaping a sustainable and equitable future.
       </p>
     </div>
-    <!-- Feature Cards -->
     <div class="row g-4 justify-content-center">
-      <!-- 1-on-1 Training -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">1-on-1 Training</h4>
           <p class="text-muted mb-0">
@@ -492,8 +435,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-      <!-- Certifications -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Certifications</h4>
           <p class="text-muted mb-0">
@@ -501,8 +443,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-      <!-- Custom Resume Building -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Customized Resume Building</h4>
           <p class="text-muted mb-0">
@@ -510,8 +451,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-      <!-- Flexible Learning -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Flexible Learning Options</h4>
           <p class="text-muted mb-0">
@@ -519,8 +459,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-      <!-- Networking -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Exclusive Networking Opportunities</h4>
           <p class="text-muted mb-0">
@@ -528,8 +467,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
           </p>
         </div>
       </div>
-      <!-- Support -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
         <div class="card-style h-100 p-4">
           <h4 class="fw-bold text-dark-blue mb-2">Extensive Student Support</h4>
           <p class="text-muted mb-0">
@@ -540,9 +478,11 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
     </div>
   </div>
 </section>
+
+<!-- Journey Section -->
 <section class="py-5 bg-white" id="Journey">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5" data-aos="fade-down">
       <h2 class="section-title mb-3">Journey</h2>
       <p class="lead text-muted mx-auto" style="max-width:700px;">
         Your step-by-step learning path to mastering Data Engineering—combining theory, hands-on experience, and real-world capstone projects.
@@ -550,10 +490,9 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <!-- Timeline Vertical -->
         <div class="timeline">
-          <!-- Week 1 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <!-- Just add data-aos to each step for fade-up stagger -->
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">1</span>
             </div>
@@ -562,8 +501,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Exploring machine learning algorithms and their foundations through live training and 1-on-1 sessions, while implementing simple models to kickstart your career.</p>
             </div>
           </div>
-          <!-- Week 2 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">2</span>
             </div>
@@ -572,8 +510,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Dive into AI basics and explore cloud platforms like Azure and AWS. Gain hands-on experience through practical exercises and kickstart your certification preparation.</p>
             </div>
           </div>
-          <!-- Week 3 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="200">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">3</span>
             </div>
@@ -582,8 +519,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Master supervised learning, model evaluation, and data handling on Azure and AWS, with hands-on exercises. Prepare for and complete the AI-900 and AZ-102 certification exams.</p>
             </div>
           </div>
-          <!-- Week 4 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="300">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">4</span>
             </div>
@@ -592,8 +528,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Explore unsupervised learning, dimensionality reduction, and model deployment on Azure, with hands-on practice using Databricks and Snowflake. Focus on AI-900 certification preparation.</p>
             </div>
           </div>
-          <!-- Week 5 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="400">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">5</span>
             </div>
@@ -602,8 +537,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Learn deep learning, neural networks, and CNNs with TensorFlow and Keras, while preparing for the AI-102 certification.</p>
             </div>
           </div>
-          <!-- Week 6 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="500">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">6</span>
             </div>
@@ -612,8 +546,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Gain a solid understanding of NLP fundamentals and explore cloud-based NLP services. Enhance your skills with hands-on practical exercises.</p>
             </div>
           </div>
-          <!-- Week 7-9 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="600">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">7</span>
             </div>
@@ -622,8 +555,7 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Delve into computer vision concepts and explore cloud-based vision services. Refine your skills through hands-on practical exercises</p>
             </div>
           </div>
-          <!-- Week 10-12 -->
-          <div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="700">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">8</span>
             </div>
@@ -632,53 +564,49 @@ The AI Engineering Career Transition Mentorship Program is an intensive 12-week 
               <p class="mb-0 text-muted">Explore robotics and automation, with a focus on NLP and computer vision on the cloud. Gain practical insights into integrating these technologies for advanced solutions.</p>
             </div>
           </div>
-
-<div class="timeline-step d-flex align-items-start mb-4">
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="800">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">9</span>
             </div>
- <div class="timeline-content">
+            <div class="timeline-content">
               <h5 class="fw-bold mb-1 text-dark-blue">  Week 9: AI System Design and Architecture on Cloud</h5>
               <p class="mb-0 text-muted">Focus on AI system design, microservices, and containerization through hands-on practical exercises. Prepare for the Azure AI Engineer Associate (AI-102) certification exam.</p>
-
- </div></div>
- <div class="timeline-step d-flex align-items-start mb-4">
+            </div>
+          </div>
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="900">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">10</span>
             </div>
             <div class="timeline-content">
               <h5 class="fw-bold mb-1 text-dark-blue">Week 10: AI Ethics, Governance and Compliance</h5>
               <p class="mb-0 text-muted">Examine AI ethics, governance, and compliance through in-depth discussions and practical exercises. Develop a strong understanding of ethical considerations in AI implementation.</p>
-            </div> 
-        </div>
-        <div class="timeline-step d-flex align-items-start mb-4">
+            </div>
+          </div>
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="1000">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">11</span>
             </div>
-        <div class="timeline-content">
+            <div class="timeline-content">
               <h5 class="fw-bold mb-1 text-dark-blue">Weeks 11,12: Capstone Project</h5>
               <p class="mb-0 text-muted">Work on your Capstone Project, covering project selection, development, deployment, and presentation. Receive weekly 1-on-1 guidance and complete practical exercises, with an optional 3-week extension offering mock interviews and networking opportunities.</p>
-            </div> 
-        </div>
-        
-        <div class="timeline-step d-flex align-items-start mb-4">
+            </div>
+          </div>
+          <div class="timeline-step d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="1100">
             <div class="timeline-marker flex-shrink-0 me-4">
               <span class="badge bg-dark-blue fs-5 rounded-circle px-3 py-2">12</span>
             </div>
             <div class="timeline-content">
               <h5 class="fw-bold mb-1 text-dark-blue">Week 12: Final Presentations, Certifications, and Career Transition
-</h5>
+              </h5>
               <p class="mb-0 text-muted">Present your final projects, complete certifications, and receive career transition support. Celebrate your achievements at the GIofAI Graduation Ceremony and take the final examination for certification awards.</p>
             </div>
-          
           </div>
         </div>
-        <!-- End Timeline -->
       </div>
     </div>
   </div>
 </section>
-<section class="py-5 bg-pastel-blue" id="FAQ">
+<section class="py-5 " id="FAQ">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">

@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <!-- FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
   <!-- Your Main Style (/Css/style.css) -->
   <link href="/Css/style.css" rel="stylesheet"/>
 </head>
@@ -213,11 +215,12 @@
    </div>
   </header>
   <!-- Header End -->
-   <section class="py-4 bg-pastel-blue mb-0">  <div class="container ">
+<section class="py-4 bg-pastel-blue mb-0">  
+  <div class="container">
     <!-- Main Profile Row -->
     <div class="row align-items-center g-4 mb-5">
       <!-- Left: Profile Photo & Contact -->
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 text-center" data-aos="fade-right">
         <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Sandeep Bhalekar" class="mentor-img shadow-sm">
         <h2 class="fw-bold text-dark-blue mb-1">Sandeep Bhalekar</h2>
         <div class="mb-2 fs-6 text-muted">CEO, GlofAI</div>
@@ -230,27 +233,24 @@
           <i class="fa-solid fa-calendar-check me-2"></i>Book a Mentor Session
         </a>
         <br>
-        <a  alt="Shareprofile">
-                      <i class="fa-solid fa-share me-2"></i>Share
-
-        </a>
+        <a alt="Shareprofile"><i class="fa-solid fa-share me-2"></i>Share</a>
       </div>
       <!-- Right: About, Availability, Skills -->
-      <div class="col-md-8">
+      <div class="col-md-8" data-aos="fade-left">
         <h2 class="section-title-left">About</h2>
         <p id="aboutShort">As a visionary leader in AI, I am dedicated to driving innovation and empowering the next generation of professionals...</p>
         <p id="aboutFull" class="d-none">With over two decades of experience, my journey has been marked by a passion for leveraging data to solve complex business challenges... [Full content here]</p>
         <a href="javascript:void(0)" id="readMoreBtn" class="text-primary small d-block mb-4" onclick="toggleAbout()">Read More</a>
         <!-- Info Cards Row -->
         <div class="row g-3 mb-4">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card-style h-100">
               <h6 class="fw-bold text-dark-blue mb-2"><i class="fa-solid fa-calendar-days me-2"></i>Availability</h6>
               <p class="mb-1 text-muted"><i class="fa-solid fa-clock me-1"></i>Mon–Fri, 2 PM – 5 PM</p>
               <p class="mb-0 text-muted"><i class="fa-solid fa-globe-asia me-1"></i>Asia/Singapore 🇸🇬</p>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card-style h-100">
               <h6 class="fw-bold text-dark-blue mb-2"><i class="fa-solid fa-lightbulb me-2"></i>Skills</h6>
               <div id="skillsList">
@@ -267,17 +267,17 @@
         </div>
         <!-- Stats Row -->
         <div class="d-flex flex-wrap gap-3 mb-2">
-          <div class="stat-box flex-fill">
+          <div class="stat-box flex-fill" data-aos="zoom-in" data-aos-delay="0">
             <i class="fa-solid fa-briefcase fs-2 mb-1"></i>
             <div class="fw-bold fs-5">20+ yrs</div>
             <div class="text-muted">Experience</div>
           </div>
-          <div class="stat-box flex-fill">
+          <div class="stat-box flex-fill" data-aos="zoom-in" data-aos-delay="100">
             <i class="fa-solid fa-star fs-2 mb-1"></i>
             <div class="fw-bold fs-5">4.9/5</div>
             <div class="text-muted">Rating</div>
           </div>
-          <div class="stat-box flex-fill">
+          <div class="stat-box flex-fill" data-aos="zoom-in" data-aos-delay="200">
             <i class="fa-solid fa-chalkboard-user fs-2 mb-1"></i>
             <div class="fw-bold fs-5">35+</div>
             <div class="text-muted">Webinars</div>
@@ -285,14 +285,13 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
 </section>
-
 <section class="py-4 bg-dark-blue"> 
-<div class="container"> 
-    <h2 class="section-title-left text-white mb-4">Qualifications & Certifications</h2>
+  <div class="container"> 
+    <h2 class="section-title-left text-white mb-4" data-aos="fade-up">Qualifications & Certifications</h2>
     <div class="row g-3 mb-2">
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card-style">
           <h6 class="fw-bold text-dark-blue mb-2">Educational Background</h6>
           <ul class="mb-0 list-unstyled">
@@ -302,7 +301,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="card-style">
           <h6 class="fw-bold text-dark-blue mb-2">Certifications</h6>
           <ul class="mb-0 list-unstyled">
@@ -313,16 +312,13 @@
         </div>
       </div>
     </div>
-</div>   
-   
-   
+  </div>   
 </section>
- <!-- Qualifications & Certifications -->   <!-- Professional Experience -->
 <section class="py-4">
-    <div class="container"> 
-    <h2 class="section-title-left mt-5 mb-4">Professional Experience</h2>
+  <div class="container"> 
+    <h2 class="section-title-left mt-5 mb-4" data-aos="fade-up">Professional Experience</h2>
     <div class="row g-4 mb-4">
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card-style">
           <h6 class="fw-bold text-dark-blue mb-2">TechNova Solutions</h6>
           <p class="mb-1"><strong>Location:</strong> Sydney, Australia</p>
@@ -330,7 +326,7 @@
           <p class="mb-0"><strong>About:</strong> Led AI-driven software architecture initiatives.</p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="card-style">
           <h6 class="fw-bold text-dark-blue mb-2">FinTech Analytics</h6>
           <p class="mb-1"><strong>Location:</strong> Melbourne, Australia</p>
@@ -341,7 +337,6 @@
     </div>
   </div>
 </section>
-
 
   <!-- OUR SPEAKERS SECTION -->
   <section class="py-5 bg-pastel-blue">
